@@ -1,4 +1,6 @@
 import requests
+from datetime import datetime, time, timedelta
+from utils.constants import DAYS_WINDOW
 
 def get_header():
     url = 'https://sandbox-oauth.piste.gouv.fr/api/oauth/token'
@@ -11,3 +13,12 @@ def get_header():
     header = {'accept': 'application/json',
               'Authorization': 'Bearer {}'.format(token)}
     return header
+
+def get_datetime_limits():
+    current_date = datetime.now().date()
+    one_day_ago = current_date - timedelta(days=DAYS_WINDOW)
+    time_point = time(11, 0, 0)
+    min_datetime = datetime.combine(one_day_ago, time_point)
+    max_datetime = datetime.combine(current_date, time_point)
+    return [min_datetime, max_datetime]
+

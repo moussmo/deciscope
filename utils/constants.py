@@ -1,0 +1,2 @@
+PUBLICATION_FILTERS = ['r', 'c', 'b']
+DAYS_WINDOW = 1
