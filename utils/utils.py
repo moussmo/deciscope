@@ -3,7 +3,7 @@ from datetime import datetime, time, timedelta, date
 from utils.constants import DAYS_WINDOW, API_KEY
 from openai import OpenAI
 
-def get_header():
+def get_piste_header():
     url = 'https://sandbox-oauth.piste.gouv.fr/api/oauth/token'
     post_request = requests.post(url, data={"grant_type":"client_credentials", "client_id":"69021959-e7d7-4faf-bc79-04bc3fed3bc3", 
                                             "client_secret":"3c7b3ad7-169c-43d9-b9ea-a4f03394c61d", "scope":"openid"},
@@ -42,3 +42,7 @@ def gpt_summarize_decision(decision_text):
     ]
     )
     return completion.choices[0].message.content
+
+def filter_decisions(decisions, start_datetime, end_datetime):
+    filtered_decisions = [decision for decision in decisions if start_datetime<=datetime.strptime(decision['decision_datetime'], '%Y-%m-%dT%H:%M:%S.%fZ')<=end_datetime]
+    return filtered_decisions
