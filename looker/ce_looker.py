@@ -1,12 +1,12 @@
 import requests
-from bs4 import BeautifulSoup
-from utils.utils import get_header, get_datetime_limits, filter_decisions
 from datetime import datetime
-from utils.constants import CASSATION_PUBLICATION_FILTERS, CE_PUBLICATION_FILTERS
+from bs4 import BeautifulSoup
+from utils.utils import get_datetime_limits, filter_decisions
+from utils.constants import CE_PUBLICATION_FILTERS
 
 def _get_decision(url):
     decision = requests.get(url).content
-    decision_soup = BeautifulSoup(decision)
+    decision_soup = BeautifulSoup(decision, "html.parser")
     decision_text = decision_soup.find("div", class_="ezrichtext-field").get_text()
     return decision_text
 
@@ -15,9 +15,12 @@ def _get_decisions(url, header):
     decision_url = "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/{}/{}"
     decisions = []
     for document in documents:
-        decision_id = document['SourceCsv1']
-        decision_datetime = document["SourceDateTime1"]
         decision_publication = document["SourceTree2"]
+        if decision_publication not in CE_PUBLICATION_FILTERS:
+            continue
+        decision_id = document['SourceCsv1'].split(';')[0]
+        decision_datetime =  datetime.strptime(document["SourceDateTime1"], '%Y-%m-%d %H:%M:%S').strftime('%Y-%m-%dT%H:%M:%S.%fZ')
+        print(decision_datetime)
         decision_date = decision_datetime[:10]
         decision_link = decision_url.format(decision_date, decision_id)
         decision_text = _get_decision(decision_link)
@@ -33,10 +36,7 @@ def _get_decisions(url, header):
 
 def look_ce_decisions():
     url = "https://www.conseil-etat.fr/xsearch?advanced=1&type=json&SourceStr4=AW_DCE&text.add=&synonyms=true&scmode=smart&SkipCount=50&SkipFrom=0&sort=SourceDateTime1.desc,SourceStr5.desc"
-
-    header = {
-        "content-type":"application/json"
-    }
+    header = {"content-type":"application/json"}
 
     start_datetime, end_datetime = get_datetime_limits()
 

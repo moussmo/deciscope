@@ -2,7 +2,7 @@ import os
 
 CASSATION_PUBLICATION_FILTERS = ['r', 'c', 'b']
 CE_PUBLICATION_FILTERS = ['A', 'B']
-CASSATION_DAYS_WINDOW = 1
+DAYS_WINDOW = 10
 CASSATION_PUBLICATION_DICT = {'b': 'Bulletin',
                     'r' : 'Rapport',
                     'l' : 'Lettres de chambre',
