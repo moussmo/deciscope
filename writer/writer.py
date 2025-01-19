@@ -1,10 +1,10 @@
 import logging
 from utils.utils import gpt_request, get_today
-
+from datetime import datetime
 logger = logging.getLogger("WRITER")
 
 def _prep_decision_text(decision, cour_type):
-    decision_date = decision['decision_date']
+    decision_date = datetime.strptime(decision['decision_date'], "%Y-%m-%d").strftime("%d %B %Y")
     decision_link = decision['decision_link']
     decision_chamber = decision['decision_chamber']
     decision_publication = decision['decision_publication']
@@ -15,40 +15,52 @@ def _prep_decision_text(decision, cour_type):
                                     request_type="linkedin", 
                                     cour_type=cour_type)
     html_decision_body = """ 
-        <b>Date</b> : {}<br>
-        <b>Chambre</b> : {}<br>
-        <b>Lien</b> : {}<br>
-        <b>Publication</b> : {}
-        <br>
-        <br>
-        <b>Résumé</b> : {} 
-        <br>
-        <br>
-        <b>Proposition LinkedIn</b> : {}
+        <span style="font-size: 16px; color: teal;"> <b>Date</b> </span> : {}<br>
+        <span style="font-size: 16px; color: teal;"> <b>Chambre</b> </span> : {}<br>
+        <span style="font-size: 16px; color: teal;"> <b>Lien</b> </span> : {}<br>
+        <span style="font-size: 16px; color: teal;"> <b>Publication</b> </span> : {}<br>
+        <span style="font-size: 16px; color: teal;"> <b>Résumé</b> </span>  : {} <br>
+        <span style="font-size: 16px; color: teal;"> <b>Proposition LinkedIn</b> </span>  : {}<br>
     """.format(decision_date, decision_chamber, decision_link, decision_publication, decision_summary, decision_linkedin)
     return html_decision_body
 
 def write_mail_body(decisions, cour_type):
     logger.info("Started writing mail body for {}".format(cour_type))
-    cour_type = "Conseil d'État" if cour_type.lower() == "ce" else "Cour de Cassation"
     today_date = get_today()
     html_body = """
         <html>
             <head></head>
             <body>
                 <h1>Déciscope {} - {}</h1>
-                <div style="height: 40px;"></div>
-    """.format(cour_type, today_date)
+    """.format(cour_type[3:], today_date)
+
+    if len(decisions)==0:
+        html_body += """
+            Hier, <b>aucune</b> importante décision juridique n'a été rendue par {}.
+            <br>
+            <br>
+        """.format(cour_type)
+    elif len(decisions)==1:
+        html_body += """
+            Hier, <b>1</b> importante décision juridique a été rendue par {}. Veuillez la-découvrir ci-dessous dans cette nouvelle édition de Déciscope : 
+            <br>
+            <br>
+        """.format(cour_type)
+    else :
+        html_body += """
+                Hier, {} importantes décisions juridiques ont été rendues par {}. Veuillez les-découvrir ci-dessous dans cette nouvelle édition de Déciscope : 
+                <br>
+                <br>
+        """.format(len(decisions), cour_type)
+        
     for decision in decisions:
         html_body += """
             <div>
             <hr style="border: 1px solid black;" />
-            <br>
         """
         html_decision_body = _prep_decision_text(decision, cour_type)
         html_body = html_body + html_decision_body
         html_body += """
-            <br>
             </div>
         """
         logger.info("Injected Decision {} into the mail body".format(decision['decision_link']))

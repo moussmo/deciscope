@@ -13,7 +13,7 @@ from writer.writer import write_mail_body
 
 def get_cassation_mail():
     cassation_decisions = look_cassation_decisions()
-    cassation_mail_body = write_mail_body(cassation_decisions, "cassation")
+    cassation_mail_body = write_mail_body(cassation_decisions, "la Cour de Cassation")
 
     subject = 'Déciscope Cour de Cassation - {}'.format(get_today())
     email = EmailMessage()
@@ -21,12 +21,11 @@ def get_cassation_mail():
     email['To'] = EMAIL_RECEIVER
     email['Subject'] = subject
     email.add_alternative(cassation_mail_body, subtype="html")
-
     return email
  
 def get_ce_mail():
     ce_decisions = look_ce_decisions()
-    ce_mail_body = write_mail_body(ce_decisions, "ce")
+    ce_mail_body = write_mail_body(ce_decisions, "le Conseil d'Etat")
 
     subject = "Déciscope Conseil D'État - {}".format(get_today())
     email = EmailMessage()
@@ -34,7 +33,6 @@ def get_ce_mail():
     email['To'] = EMAIL_RECEIVER
     email['Subject'] = subject
     email.add_alternative(ce_mail_body, subtype="html")
-
     return email
 
 if __name__=='__main__':

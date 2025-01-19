@@ -1,6 +1,6 @@
 import os
 
-DAYS_WINDOW = 10
+DAYS_WINDOW = 3
 
 CASSATION_PUBLICATION_DICT = {'b': 'Bulletin',
                               'r' : 'Rapport',

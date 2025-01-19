@@ -1,10 +1,13 @@
 import logging
 import requests
+import markdown
 from datetime import datetime, time, timedelta, date
 from utils.constants import DAYS_WINDOW, API_KEY
 import openai
 from openai import OpenAI
+import locale
 
+locale.setlocale(locale.LC_TIME, 'fr_FR.UTF-8')
 logger = logging.getLogger("UTILS")
 
 def get_piste_header():
@@ -25,6 +28,7 @@ def get_piste_header():
 
 def get_today():
     today = date.today()
+    today = today.strftime("%d %B %Y")
     logger.info("Today is : {}".format(today))
     return today 
 
@@ -39,21 +43,19 @@ def get_datetime_limits():
 
 def gpt_request(request_text, request_type, cour_type):
     if request_type == "summarization":
-        message = " Résume-moi les points de droit tranchés par la {} dans la décision suivante : »): {}".format(cour_type, request_text) 
+        message = " Résume-moi les points de droit tranchés par {} dans la décision suivante : »): {}".format(cour_type, request_text) 
     else:
-         message = "« Transforme-moi ce résumé en post linkedin (je suis avocat et m'adresse à d'autres avocats et clients intéressés par le sujet) : {}»".format(request_text) 
+         message = "« Transforme-moi ce résumé en post linkedin (je suis avocat et m'adresse à d'autres avocats et clients intéressés par le sujet): {}»".format(request_text) 
 
     logger.info("Sending GPT summarization request")
-    client = OpenAI(
-        api_key=API_KEY
-        )
+    client = OpenAI(api_key=API_KEY)
     try:
         completion = client.chat.completions.create(
-        model="gpt-4o-mini",
-        store=True,
-        messages=[{"role": "user", "content": message}]
-        )
-        return completion.choices[0].message.content
+            model="gpt-4o-mini",
+            store=True,
+            messages=[{"role": "user", "content": message}]
+            )
+        return markdown.markdown(completion.choices[0].message.content.replace("#", "\#"))
     except openai.error.InvalidRequestError as e:
         logging.info(f"Invalid request error: {e}")
     except openai.error.AuthenticationError as e:
@@ -71,4 +73,5 @@ def gpt_request(request_text, request_type, cour_type):
 def filter_decisions(decisions, start_datetime, end_datetime):
     logger.info("Filtering Decisions according to date and days window")
     filtered_decisions = [decision for decision in decisions if start_datetime<=datetime.strptime(decision['decision_datetime'], '%Y-%m-%dT%H:%M:%S.%fZ')<=end_datetime]
+    logger.info("From {} decision, {} were kept".format(len(decisions), len(filtered_decisions)))
     return filtered_decisions

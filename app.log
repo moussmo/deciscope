@@ -11,3 +11,772 @@
 2025-01-19 13:39:52,478 - urllib3.connectionpool - DEBUG - https://sandbox-api.piste.gouv.fr:443 "GET /cassation/judilibre/v1.0/export?batch=0&batch_size=100&publication=r&publication=c&publication=b HTTP/1.1" 200 None
 2025-01-19 13:39:52,729 - utils.utils - INFO - Filtering Decisions according to date and days window
 2025-01-19 13:39:52,734 - looker.cassation_looker - INFO - Reducing Cassation Decisions
+2025-01-19 13:54:52,909 - root - Main program started
+2025-01-19 13:54:52,909 - root - Launching lookers and writers
+2025-01-19 13:54:52,910 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 13:54:52,910 - UTILS - Getting PISTE API token
+2025-01-19 13:54:53,009 - UTILS - PISTE API token acquired
+2025-01-19 13:54:53,009 - UTILS - Start and end datetime chosen : 2025-01-09 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 13:54:53,010 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 13:54:53,437 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 13:54:53,442 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 13:54:53,442 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the list
+2025-01-19 13:54:53,443 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c into the list
+2025-01-19 13:54:53,443 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 into the list
+2025-01-19 13:54:53,443 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a into the list
+2025-01-19 13:54:53,444 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 into the list
+2025-01-19 13:54:53,444 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 into the list
+2025-01-19 13:54:53,444 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 into the list
+2025-01-19 13:54:53,445 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 into the list
+2025-01-19 13:54:53,445 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a into the list
+2025-01-19 13:54:53,445 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e into the list
+2025-01-19 13:54:53,445 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 into the list
+2025-01-19 13:54:53,446 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 into the list
+2025-01-19 13:54:53,446 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 into the list
+2025-01-19 13:54:53,446 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526d into the list
+2025-01-19 13:54:53,446 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c6012a55caa6d16717 into the list
+2025-01-19 13:54:53,447 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c2012a55caa6d16713 into the list
+2025-01-19 13:54:53,447 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b4beb92359c4b0f33ec7 into the list
+2025-01-19 13:54:53,447 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d9012a55caa6d1672d into the list
+2025-01-19 13:54:53,447 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787dc012a55caa6d16731 into the list
+2025-01-19 13:54:53,448 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526f into the list
+2025-01-19 13:54:53,448 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787ca012a55caa6d1671d into the list
+2025-01-19 13:54:53,448 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c7012a55caa6d16719 into the list
+2025-01-19 13:54:53,448 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c9012a55caa6d1671b into the list
+2025-01-19 13:54:53,449 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c4012a55caa6d16715 into the list
+2025-01-19 13:54:53,449 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d8012a55caa6d1672b into the list
+2025-01-19 13:54:53,449 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd50 into the list
+2025-01-19 13:54:53,449 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd58c79691c828ecdd4c into the list
+2025-01-19 13:54:53,450 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b8059b052b288a484a43 into the list
+2025-01-19 13:54:53,450 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b9b46ab05acc8d83149d into the list
+2025-01-19 13:54:53,450 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787db012a55caa6d1672f into the list
+2025-01-19 13:54:53,451 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787de012a55caa6d16733 into the list
+2025-01-19 13:54:53,451 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876540dd684edf8fb2526b into the list
+2025-01-19 13:54:53,451 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd4e into the list
+2025-01-19 13:54:53,451 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685a into the list
+2025-01-19 13:54:53,452 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce42685e into the list
+2025-01-19 13:54:53,452 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685c into the list
+2025-01-19 13:54:53,452 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426860 into the list
+2025-01-19 13:54:53,453 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426862 into the list
+2025-01-19 13:54:53,453 - WRITER - Started writing mail body for cassation
+2025-01-19 13:54:53,454 - UTILS - Today is : 2025-01-19
+2025-01-19 13:54:53,454 - UTILS - Sending GPT summarization request
+2025-01-19 13:55:01,866 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:55:01,872 - UTILS - Sending GPT summarization request
+2025-01-19 13:55:13,901 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:55:13,903 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 13:55:13,903 - UTILS - Sending GPT summarization request
+2025-01-19 13:55:23,332 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:55:23,340 - UTILS - Sending GPT summarization request
+2025-01-19 13:55:31,399 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:55:31,407 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c into the mail body
+2025-01-19 13:55:31,408 - UTILS - Sending GPT summarization request
+2025-01-19 13:55:41,127 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:55:41,135 - UTILS - Sending GPT summarization request
+2025-01-19 13:55:50,382 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:55:50,385 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 into the mail body
+2025-01-19 13:55:50,386 - UTILS - Sending GPT summarization request
+2025-01-19 13:55:56,464 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:55:56,471 - UTILS - Sending GPT summarization request
+2025-01-19 13:56:05,712 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:56:05,720 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a into the mail body
+2025-01-19 13:56:05,721 - UTILS - Sending GPT summarization request
+2025-01-19 13:56:11,858 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:56:11,869 - UTILS - Sending GPT summarization request
+2025-01-19 13:56:23,191 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:56:23,197 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 into the mail body
+2025-01-19 13:56:23,197 - UTILS - Sending GPT summarization request
+2025-01-19 13:56:31,720 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:56:31,724 - UTILS - Sending GPT summarization request
+2025-01-19 13:56:39,959 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:56:39,963 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 into the mail body
+2025-01-19 13:56:39,964 - UTILS - Sending GPT summarization request
+2025-01-19 13:56:49,478 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:56:49,483 - UTILS - Sending GPT summarization request
+2025-01-19 13:57:02,858 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:57:02,860 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 into the mail body
+2025-01-19 13:57:02,860 - UTILS - Sending GPT summarization request
+2025-01-19 13:57:11,347 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:57:11,353 - UTILS - Sending GPT summarization request
+2025-01-19 13:57:20,994 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:57:20,998 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 into the mail body
+2025-01-19 13:57:20,999 - UTILS - Sending GPT summarization request
+2025-01-19 13:57:29,004 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:57:29,007 - UTILS - Sending GPT summarization request
+2025-01-19 13:57:39,186 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:57:39,192 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a into the mail body
+2025-01-19 13:57:39,192 - UTILS - Sending GPT summarization request
+2025-01-19 13:57:45,734 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:57:45,736 - UTILS - Sending GPT summarization request
+2025-01-19 13:57:53,126 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:57:53,128 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e into the mail body
+2025-01-19 13:57:53,128 - UTILS - Sending GPT summarization request
+2025-01-19 13:58:04,279 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:58:04,283 - UTILS - Sending GPT summarization request
+2025-01-19 13:58:11,563 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:58:11,567 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 into the mail body
+2025-01-19 13:58:11,568 - UTILS - Sending GPT summarization request
+2025-01-19 13:58:19,019 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:58:19,033 - UTILS - Sending GPT summarization request
+2025-01-19 13:58:27,773 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:58:27,775 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 into the mail body
+2025-01-19 13:58:27,776 - UTILS - Sending GPT summarization request
+2025-01-19 13:58:35,742 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:58:35,753 - UTILS - Sending GPT summarization request
+2025-01-19 13:58:58,829 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 13:58:58,831 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 into the mail body
+2025-01-19 13:58:58,832 - UTILS - Sending GPT summarization request
+2025-01-19 14:01:43,099 - root - Main program started
+2025-01-19 14:01:43,099 - root - Launching lookers and writers
+2025-01-19 14:01:43,100 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:01:43,100 - UTILS - Getting PISTE API token
+2025-01-19 14:01:43,181 - UTILS - PISTE API token acquired
+2025-01-19 14:01:43,182 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:01:43,182 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:01:43,858 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:01:43,862 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:01:43,863 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:01:43,864 - WRITER - Started writing mail body for cassation
+2025-01-19 14:01:43,864 - UTILS - Today is : 2025-01-19
+2025-01-19 14:01:43,865 - UTILS - Sending GPT summarization request
+2025-01-19 14:01:51,913 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:01:51,931 - UTILS - Sending GPT summarization request
+2025-01-19 14:02:04,446 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:02:04,455 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:02:04,456 - UTILS - Today is : 2025-01-19
+2025-01-19 14:02:04,469 - CE LOOKER - CE looker launched
+2025-01-19 14:02:04,470 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:02:04,470 - CE LOOKER - Getting CE decisions
+2025-01-19 14:03:30,737 - root - Main program started
+2025-01-19 14:03:30,738 - root - Launching lookers and writers
+2025-01-19 14:03:30,738 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:03:30,738 - UTILS - Getting PISTE API token
+2025-01-19 14:03:30,828 - UTILS - PISTE API token acquired
+2025-01-19 14:03:30,829 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:03:30,829 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:03:31,395 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:03:31,401 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:03:31,402 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:03:31,403 - WRITER - Started writing mail body for cassation
+2025-01-19 14:03:31,404 - UTILS - Today is : 2025-01-19
+2025-01-19 14:03:31,404 - UTILS - Sending GPT summarization request
+2025-01-19 14:03:39,712 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:03:39,722 - UTILS - Sending GPT summarization request
+2025-01-19 14:03:47,081 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:03:47,093 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:03:47,093 - UTILS - Today is : 2025-01-19
+2025-01-19 14:03:47,111 - CE LOOKER - CE looker launched
+2025-01-19 14:03:47,112 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:03:47,112 - CE LOOKER - Getting CE decisions
+2025-01-19 14:03:47,545 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the list
+2025-01-19 14:03:47,846 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the list
+2025-01-19 14:03:48,157 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the list
+2025-01-19 14:03:48,464 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the list
+2025-01-19 14:03:48,794 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the list
+2025-01-19 14:03:49,158 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the list
+2025-01-19 14:03:49,517 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the list
+2025-01-19 14:03:49,854 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the list
+2025-01-19 14:03:49,855 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:03:49,855 - WRITER - Started writing mail body for ce
+2025-01-19 14:03:49,855 - UTILS - Today is : 2025-01-19
+2025-01-19 14:03:49,855 - UTILS - Today is : 2025-01-19
+2025-01-19 14:03:49,880 - root - Launching mail senders
+2025-01-19 14:03:50,129 - root - Logged into email account successfully
+2025-01-19 14:03:50,824 - root - Sent Cassation mail
+2025-01-19 14:03:51,414 - root - Sent CE mail
+2025-01-19 14:03:51,426 - root - Main program over
+2025-01-19 14:11:13,913 - root - Main program started
+2025-01-19 14:11:13,914 - root - Launching lookers and writers
+2025-01-19 14:11:13,914 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:11:13,914 - UTILS - Getting PISTE API token
+2025-01-19 14:11:14,045 - UTILS - PISTE API token acquired
+2025-01-19 14:11:14,046 - UTILS - Start and end datetime chosen : 2025-01-14 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:11:14,047 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:11:14,696 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:11:14,702 - UTILS - From 100 decision, 33 were filtered
+2025-01-19 14:11:14,703 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:11:14,703 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:11:14,704 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c to the list
+2025-01-19 14:11:14,704 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 to the list
+2025-01-19 14:11:14,704 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a to the list
+2025-01-19 14:11:14,705 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 to the list
+2025-01-19 14:11:14,705 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 to the list
+2025-01-19 14:11:14,706 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 to the list
+2025-01-19 14:11:14,706 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 to the list
+2025-01-19 14:11:14,707 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a to the list
+2025-01-19 14:11:14,707 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e to the list
+2025-01-19 14:11:14,707 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 to the list
+2025-01-19 14:11:14,708 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 to the list
+2025-01-19 14:11:14,708 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 to the list
+2025-01-19 14:11:14,708 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526d to the list
+2025-01-19 14:11:14,709 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c6012a55caa6d16717 to the list
+2025-01-19 14:11:14,709 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c2012a55caa6d16713 to the list
+2025-01-19 14:11:14,710 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b4beb92359c4b0f33ec7 to the list
+2025-01-19 14:11:14,710 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d9012a55caa6d1672d to the list
+2025-01-19 14:11:14,711 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787dc012a55caa6d16731 to the list
+2025-01-19 14:11:14,711 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526f to the list
+2025-01-19 14:11:14,712 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787ca012a55caa6d1671d to the list
+2025-01-19 14:11:14,713 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c7012a55caa6d16719 to the list
+2025-01-19 14:11:14,713 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c9012a55caa6d1671b to the list
+2025-01-19 14:11:14,713 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c4012a55caa6d16715 to the list
+2025-01-19 14:11:14,714 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d8012a55caa6d1672b to the list
+2025-01-19 14:11:14,714 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd50 to the list
+2025-01-19 14:11:14,714 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd58c79691c828ecdd4c to the list
+2025-01-19 14:11:14,715 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b8059b052b288a484a43 to the list
+2025-01-19 14:11:14,715 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b9b46ab05acc8d83149d to the list
+2025-01-19 14:11:14,715 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787db012a55caa6d1672f to the list
+2025-01-19 14:11:14,716 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787de012a55caa6d16733 to the list
+2025-01-19 14:11:14,716 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876540dd684edf8fb2526b to the list
+2025-01-19 14:11:14,717 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd4e to the list
+2025-01-19 14:11:14,719 - WRITER - Started writing mail body for cassation
+2025-01-19 14:11:14,719 - UTILS - Today is : 2025-01-19
+2025-01-19 14:11:14,720 - UTILS - Sending GPT summarization request
+2025-01-19 14:11:26,263 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:11:26,303 - UTILS - Sending GPT summarization request
+2025-01-19 14:11:33,138 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:11:33,151 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:11:33,153 - UTILS - Sending GPT summarization request
+2025-01-19 14:11:41,600 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:11:41,612 - UTILS - Sending GPT summarization request
+2025-01-19 14:11:48,792 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:11:48,804 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c into the mail body
+2025-01-19 14:11:48,804 - UTILS - Sending GPT summarization request
+2025-01-19 14:11:58,017 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:11:58,024 - UTILS - Sending GPT summarization request
+2025-01-19 14:12:10,116 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:12:10,127 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 into the mail body
+2025-01-19 14:12:10,127 - UTILS - Sending GPT summarization request
+2025-01-19 14:12:17,753 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:12:17,758 - UTILS - Sending GPT summarization request
+2025-01-19 14:12:24,707 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:12:24,711 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a into the mail body
+2025-01-19 14:12:24,711 - UTILS - Sending GPT summarization request
+2025-01-19 14:12:35,445 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:12:35,458 - UTILS - Sending GPT summarization request
+2025-01-19 14:12:42,239 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:12:42,247 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 into the mail body
+2025-01-19 14:12:42,248 - UTILS - Sending GPT summarization request
+2025-01-19 14:12:54,079 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:12:54,084 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:01,490 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:01,500 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 into the mail body
+2025-01-19 14:13:01,500 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:10,235 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:10,248 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:16,283 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:16,291 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 into the mail body
+2025-01-19 14:13:16,292 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:27,368 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:27,382 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:34,006 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:34,015 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 into the mail body
+2025-01-19 14:13:34,015 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:39,752 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:39,758 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:47,444 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:47,450 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a into the mail body
+2025-01-19 14:13:47,451 - UTILS - Sending GPT summarization request
+2025-01-19 14:13:54,052 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:13:54,069 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:00,468 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:00,498 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e into the mail body
+2025-01-19 14:14:00,508 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:07,020 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:07,026 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:13,222 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:13,245 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 into the mail body
+2025-01-19 14:14:13,246 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:22,830 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:22,853 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:28,949 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:28,953 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 into the mail body
+2025-01-19 14:14:28,954 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:37,344 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:37,354 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:42,934 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:42,937 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 into the mail body
+2025-01-19 14:14:42,937 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:50,236 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:50,253 - UTILS - Sending GPT summarization request
+2025-01-19 14:14:56,846 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:14:56,855 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526d into the mail body
+2025-01-19 14:14:56,856 - UTILS - Sending GPT summarization request
+2025-01-19 14:15:03,496 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:15:03,527 - UTILS - Sending GPT summarization request
+2025-01-19 14:15:12,918 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:15:12,923 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c6012a55caa6d16717 into the mail body
+2025-01-19 14:15:12,924 - UTILS - Sending GPT summarization request
+2025-01-19 14:15:19,702 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:15:19,708 - UTILS - Sending GPT summarization request
+2025-01-19 14:15:29,250 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:15:29,260 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c2012a55caa6d16713 into the mail body
+2025-01-19 14:15:29,261 - UTILS - Sending GPT summarization request
+2025-01-19 14:15:38,379 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:15:38,388 - UTILS - Sending GPT summarization request
+2025-01-19 14:15:46,834 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:15:46,838 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6787b4beb92359c4b0f33ec7 into the mail body
+2025-01-19 14:15:46,839 - UTILS - Sending GPT summarization request
+2025-01-19 14:15:56,864 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:15:56,869 - UTILS - Sending GPT summarization request
+2025-01-19 14:16:04,306 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:16:04,309 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787d9012a55caa6d1672d into the mail body
+2025-01-19 14:16:04,310 - UTILS - Sending GPT summarization request
+2025-01-19 14:16:15,698 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:16:15,706 - UTILS - Sending GPT summarization request
+2025-01-19 14:16:24,316 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:16:24,330 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787dc012a55caa6d16731 into the mail body
+2025-01-19 14:16:24,330 - UTILS - Sending GPT summarization request
+2025-01-19 14:16:35,103 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:16:35,123 - UTILS - Sending GPT summarization request
+2025-01-19 14:16:41,217 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:16:41,223 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526f into the mail body
+2025-01-19 14:16:41,224 - UTILS - Sending GPT summarization request
+2025-01-19 14:16:50,224 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:16:50,227 - UTILS - Sending GPT summarization request
+2025-01-19 14:16:58,913 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:16:58,933 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787ca012a55caa6d1671d into the mail body
+2025-01-19 14:16:58,935 - UTILS - Sending GPT summarization request
+2025-01-19 14:17:11,296 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:17:11,310 - UTILS - Sending GPT summarization request
+2025-01-19 14:17:57,122 - root - Main program started
+2025-01-19 14:17:57,123 - root - Launching lookers and writers
+2025-01-19 14:17:57,123 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:17:57,123 - UTILS - Getting PISTE API token
+2025-01-19 14:17:57,205 - UTILS - PISTE API token acquired
+2025-01-19 14:17:57,206 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:17:57,206 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:17:57,734 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:17:57,742 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:17:57,743 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:17:57,743 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:17:57,745 - WRITER - Started writing mail body for cassation
+2025-01-19 14:18:40,425 - root - Main program started
+2025-01-19 14:18:40,426 - root - Launching lookers and writers
+2025-01-19 14:18:40,426 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:18:40,426 - UTILS - Getting PISTE API token
+2025-01-19 14:18:40,573 - UTILS - PISTE API token acquired
+2025-01-19 14:18:40,574 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:18:40,575 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:18:41,212 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:18:41,223 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:18:41,223 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:18:41,224 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:18:41,225 - WRITER - Started writing mail body for cassation
+2025-01-19 14:18:41,226 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:18:41,226 - UTILS - Sending GPT summarization request
+2025-01-19 14:18:50,304 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:18:50,321 - UTILS - Sending GPT summarization request
+2025-01-19 14:19:00,965 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:19:00,977 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:19:00,977 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:19:00,989 - CE LOOKER - CE looker launched
+2025-01-19 14:19:00,989 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:19:00,990 - CE LOOKER - Getting CE decisions
+2025-01-19 14:19:01,412 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:19:01,699 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:19:02,047 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:19:02,403 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:19:02,707 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:19:03,040 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:19:03,656 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:19:04,189 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:19:04,222 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:19:04,224 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:19:04,255 - WRITER - Started writing mail body for ce
+2025-01-19 14:19:04,261 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:19:04,278 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:19:04,334 - root - Launching mail senders
+2025-01-19 14:19:04,599 - root - Logged into email account successfully
+2025-01-19 14:19:05,358 - root - Sent Cassation mail
+2025-01-19 14:19:05,956 - root - Sent CE mail
+2025-01-19 14:19:05,968 - root - Main program over
+2025-01-19 14:25:44,175 - root - Main program started
+2025-01-19 14:25:44,176 - root - Launching lookers and writers
+2025-01-19 14:25:44,176 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:25:44,176 - UTILS - Getting PISTE API token
+2025-01-19 14:25:44,302 - UTILS - PISTE API token acquired
+2025-01-19 14:25:44,303 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:25:44,303 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:25:45,014 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:25:45,019 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:25:45,019 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:25:45,020 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:25:45,021 - WRITER - Started writing mail body for cassation
+2025-01-19 14:25:45,021 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:25:45,022 - UTILS - Sending GPT summarization request
+2025-01-19 14:25:52,833 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:25:52,848 - UTILS - Sending GPT summarization request
+2025-01-19 14:26:01,913 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:26:29,655 - root - Main program started
+2025-01-19 14:26:29,656 - root - Launching lookers and writers
+2025-01-19 14:26:29,656 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:26:29,657 - UTILS - Getting PISTE API token
+2025-01-19 14:26:29,749 - UTILS - PISTE API token acquired
+2025-01-19 14:26:29,750 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:26:29,750 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:26:30,373 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:26:30,382 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:26:30,383 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:26:30,384 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:26:30,386 - WRITER - Started writing mail body for cassation
+2025-01-19 14:26:30,387 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:26:30,387 - UTILS - Sending GPT summarization request
+2025-01-19 14:26:39,546 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:26:39,576 - UTILS - Sending GPT summarization request
+2025-01-19 14:26:46,776 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:26:46,793 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:26:46,794 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:26:46,835 - CE LOOKER - CE looker launched
+2025-01-19 14:26:46,835 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:26:46,836 - CE LOOKER - Getting CE decisions
+2025-01-19 14:26:47,367 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:26:47,717 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:26:48,070 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:26:48,365 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:26:48,733 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:26:49,086 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:26:49,437 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:26:49,788 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:26:49,789 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:26:49,790 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:26:49,790 - WRITER - Started writing mail body for ce
+2025-01-19 14:26:49,791 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:26:49,791 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:26:49,824 - root - Launching mail senders
+2025-01-19 14:26:50,076 - root - Logged into email account successfully
+2025-01-19 14:26:51,295 - root - Sent Cassation mail
+2025-01-19 14:26:52,530 - root - Sent CE mail
+2025-01-19 14:26:52,543 - root - Main program over
+2025-01-19 14:27:45,422 - root - Main program started
+2025-01-19 14:27:45,422 - root - Launching lookers and writers
+2025-01-19 14:27:45,423 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:27:45,423 - UTILS - Getting PISTE API token
+2025-01-19 14:27:45,546 - UTILS - PISTE API token acquired
+2025-01-19 14:27:45,547 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:27:45,547 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:27:45,966 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:27:45,974 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:27:45,975 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:27:45,975 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:27:45,976 - WRITER - Started writing mail body for cassation
+2025-01-19 14:27:45,976 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:27:45,977 - UTILS - Sending GPT summarization request
+2025-01-19 14:27:54,962 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:27:54,982 - UTILS - Sending GPT summarization request
+2025-01-19 14:28:07,309 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:28:07,324 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:28:07,324 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:28:07,340 - CE LOOKER - CE looker launched
+2025-01-19 14:28:07,340 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:28:07,341 - CE LOOKER - Getting CE decisions
+2025-01-19 14:28:07,768 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:28:08,115 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:28:08,418 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:28:08,715 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:28:09,024 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:28:09,377 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:28:09,700 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:28:10,002 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:28:10,003 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:28:10,004 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:28:10,004 - WRITER - Started writing mail body for ce
+2025-01-19 14:28:10,004 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:28:10,005 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:28:10,034 - root - Launching mail senders
+2025-01-19 14:28:10,269 - root - Logged into email account successfully
+2025-01-19 14:28:10,948 - root - Sent Cassation mail
+2025-01-19 14:28:12,070 - root - Sent CE mail
+2025-01-19 14:28:12,083 - root - Main program over
+2025-01-19 14:30:31,351 - root - Main program started
+2025-01-19 14:30:31,352 - root - Launching lookers and writers
+2025-01-19 14:30:31,352 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:30:31,353 - UTILS - Getting PISTE API token
+2025-01-19 14:30:31,467 - UTILS - PISTE API token acquired
+2025-01-19 14:30:31,468 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:30:31,468 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:30:32,117 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:30:32,123 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:30:32,124 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:30:32,124 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:30:32,125 - WRITER - Started writing mail body for cassation
+2025-01-19 14:30:32,126 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:30:32,126 - UTILS - Sending GPT summarization request
+2025-01-19 14:30:45,035 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:30:45,096 - UTILS - Sending GPT summarization request
+2025-01-19 14:30:55,210 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:30:55,219 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:30:55,220 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:30:55,231 - CE LOOKER - CE looker launched
+2025-01-19 14:30:55,232 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:30:55,232 - CE LOOKER - Getting CE decisions
+2025-01-19 14:30:55,674 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:30:55,964 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:30:56,276 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:30:56,584 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:30:56,907 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:30:57,253 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:30:57,535 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:30:57,847 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:30:57,847 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:30:57,848 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:30:57,848 - WRITER - Started writing mail body for ce
+2025-01-19 14:30:57,849 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:30:57,849 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:30:57,876 - root - Launching mail senders
+2025-01-19 14:30:58,117 - root - Logged into email account successfully
+2025-01-19 14:31:00,160 - root - Sent Cassation mail
+2025-01-19 14:31:00,726 - root - Sent CE mail
+2025-01-19 14:31:00,738 - root - Main program over
+2025-01-19 14:33:23,269 - root - Main program started
+2025-01-19 14:33:23,269 - root - Launching lookers and writers
+2025-01-19 14:33:23,270 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:33:23,270 - UTILS - Getting PISTE API token
+2025-01-19 14:33:23,369 - UTILS - PISTE API token acquired
+2025-01-19 14:33:23,370 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:33:23,370 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:33:23,812 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:33:23,819 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:33:23,819 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:33:23,820 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:33:23,822 - WRITER - Started writing mail body for cassation
+2025-01-19 14:33:23,823 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:33:23,823 - UTILS - Sending GPT summarization request
+2025-01-19 14:33:35,795 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:33:35,810 - UTILS - Sending GPT summarization request
+2025-01-19 14:33:44,413 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:33:44,434 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:33:44,435 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:33:44,464 - CE LOOKER - CE looker launched
+2025-01-19 14:33:44,465 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:33:44,465 - CE LOOKER - Getting CE decisions
+2025-01-19 14:33:44,903 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:33:45,260 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:33:45,568 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:33:45,948 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:33:46,295 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:33:46,614 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:33:46,933 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:33:47,266 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:33:47,267 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:33:47,267 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:33:47,268 - WRITER - Started writing mail body for ce
+2025-01-19 14:33:47,268 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:33:47,268 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:33:47,312 - root - Launching mail senders
+2025-01-19 14:33:47,548 - root - Logged into email account successfully
+2025-01-19 14:33:48,713 - root - Sent Cassation mail
+2025-01-19 14:33:50,569 - root - Sent CE mail
+2025-01-19 14:33:50,582 - root - Main program over
+2025-01-19 14:36:14,000 - root - Main program started
+2025-01-19 14:36:14,000 - root - Launching lookers and writers
+2025-01-19 14:36:14,000 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:36:14,001 - UTILS - Getting PISTE API token
+2025-01-19 14:36:14,127 - UTILS - PISTE API token acquired
+2025-01-19 14:36:14,127 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:36:14,128 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:36:14,556 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:36:14,565 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:36:14,566 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:36:14,567 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:36:14,569 - WRITER - Started writing mail body for cassation
+2025-01-19 14:36:14,570 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:36:14,570 - UTILS - Sending GPT summarization request
+2025-01-19 14:36:25,425 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:36:25,450 - UTILS - Sending GPT summarization request
+2025-01-19 14:36:33,361 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:36:33,372 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:36:33,372 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:36:33,387 - CE LOOKER - CE looker launched
+2025-01-19 14:36:33,388 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:36:33,389 - CE LOOKER - Getting CE decisions
+2025-01-19 14:36:33,852 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:36:34,161 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:36:34,478 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:36:34,799 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:36:35,129 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:36:35,445 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:36:35,793 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:36:36,142 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:36:36,143 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:36:36,144 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:36:36,144 - WRITER - Started writing mail body for ce
+2025-01-19 14:36:36,145 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:36:36,145 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:36:36,179 - root - Launching mail senders
+2025-01-19 14:36:36,419 - root - Logged into email account successfully
+2025-01-19 14:36:37,651 - root - Sent Cassation mail
+2025-01-19 14:36:39,437 - root - Sent CE mail
+2025-01-19 14:36:39,449 - root - Main program over
+2025-01-19 14:38:45,723 - root - Main program started
+2025-01-19 14:38:45,723 - root - Launching lookers and writers
+2025-01-19 14:38:45,724 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:38:45,724 - UTILS - Getting PISTE API token
+2025-01-19 14:38:45,839 - UTILS - PISTE API token acquired
+2025-01-19 14:38:45,839 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:38:45,840 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:38:46,260 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:38:46,265 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:38:46,265 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:38:46,265 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:38:46,267 - WRITER - Started writing mail body for cassation
+2025-01-19 14:38:46,267 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:40:25,794 - root - Main program started
+2025-01-19 14:40:25,795 - root - Launching lookers and writers
+2025-01-19 14:40:25,795 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:40:25,796 - UTILS - Getting PISTE API token
+2025-01-19 14:40:25,875 - UTILS - PISTE API token acquired
+2025-01-19 14:40:25,876 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:40:25,876 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:40:26,567 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:40:26,572 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:40:26,572 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:40:26,573 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:40:26,574 - WRITER - Started writing mail body for cassation
+2025-01-19 14:40:26,574 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:40:26,575 - UTILS - Sending GPT summarization request
+2025-01-19 14:40:36,751 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:40:36,762 - UTILS - Sending GPT summarization request
+2025-01-19 14:40:45,638 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:40:45,644 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:40:45,644 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:40:45,659 - CE LOOKER - CE looker launched
+2025-01-19 14:40:45,659 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:40:45,660 - CE LOOKER - Getting CE decisions
+2025-01-19 14:40:46,135 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:40:46,434 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:40:46,807 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:40:47,112 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:40:47,453 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:40:47,813 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:40:48,128 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:40:48,460 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:40:48,461 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:40:48,462 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:40:48,462 - WRITER - Started writing mail body for ce
+2025-01-19 14:40:48,462 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:40:48,463 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:40:48,486 - root - Launching mail senders
+2025-01-19 14:40:48,719 - root - Logged into email account successfully
+2025-01-19 14:40:49,342 - root - Sent Cassation mail
+2025-01-19 14:40:49,829 - root - Sent CE mail
+2025-01-19 14:40:49,842 - root - Main program over
+2025-01-19 14:54:01,381 - root - Main program started
+2025-01-19 14:54:01,381 - root - Launching lookers and writers
+2025-01-19 14:54:01,382 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:54:01,382 - UTILS - Getting PISTE API token
+2025-01-19 14:54:01,478 - UTILS - PISTE API token acquired
+2025-01-19 14:54:01,479 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:54:01,480 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:54:01,921 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:54:01,926 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:54:01,927 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:54:01,927 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:54:01,928 - WRITER - Started writing mail body for La Cour de Cassation
+2025-01-19 14:54:01,929 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:54:01,930 - UTILS - Sending GPT summarization request
+2025-01-19 14:54:19,511 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:54:19,538 - UTILS - Sending GPT summarization request
+2025-01-19 14:54:28,235 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:54:28,245 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:54:28,245 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:54:28,258 - CE LOOKER - CE looker launched
+2025-01-19 14:54:28,259 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:54:28,259 - CE LOOKER - Getting CE decisions
+2025-01-19 14:54:28,680 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:54:28,994 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:54:29,314 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:54:29,614 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:54:29,927 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:54:30,273 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:54:30,595 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:54:31,046 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:54:31,046 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:54:31,047 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:54:31,047 - WRITER - Started writing mail body for Le Conseil d'Etat
+2025-01-19 14:54:31,048 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:54:31,048 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:54:31,075 - root - Launching mail senders
+2025-01-19 14:54:31,311 - root - Logged into email account successfully
+2025-01-19 14:54:33,254 - root - Sent Cassation mail
+2025-01-19 14:54:35,144 - root - Sent CE mail
+2025-01-19 14:54:35,156 - root - Main program over
+2025-01-19 14:56:02,634 - root - Main program started
+2025-01-19 14:56:02,635 - root - Launching lookers and writers
+2025-01-19 14:56:02,635 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 14:56:02,636 - UTILS - Getting PISTE API token
+2025-01-19 14:56:02,725 - UTILS - PISTE API token acquired
+2025-01-19 14:56:02,726 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:56:02,727 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 14:56:03,481 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:56:03,486 - UTILS - From 100 decision, 1 were filtered
+2025-01-19 14:56:03,486 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 14:56:03,487 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 14:56:03,488 - WRITER - Started writing mail body for la Cour de Cassation
+2025-01-19 14:56:03,488 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:56:03,489 - UTILS - Sending GPT summarization request
+2025-01-19 14:56:13,654 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:56:13,662 - UTILS - Sending GPT summarization request
+2025-01-19 14:56:24,884 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 14:56:24,887 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 14:56:24,888 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:56:24,898 - CE LOOKER - CE looker launched
+2025-01-19 14:56:24,898 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 14:56:24,907 - CE LOOKER - Getting CE decisions
+2025-01-19 14:56:25,360 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 14:56:25,670 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 14:56:25,987 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 14:56:26,325 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 14:56:26,681 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 14:56:27,036 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 14:56:27,361 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 14:56:27,691 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 14:56:27,692 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 14:56:27,692 - UTILS - From 8 decision, 0 were filtered
+2025-01-19 14:56:27,693 - WRITER - Started writing mail body for le Conseil d'Etat
+2025-01-19 14:56:27,693 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:56:27,694 - UTILS - Today is : 19 janvier 2025
+2025-01-19 14:56:27,718 - root - Launching mail senders
+2025-01-19 14:56:27,953 - root - Logged into email account successfully
+2025-01-19 14:56:28,514 - root - Sent Cassation mail
+2025-01-19 14:56:30,405 - root - Sent CE mail
+2025-01-19 14:56:30,418 - root - Main program over
+2025-01-19 15:00:20,491 - root - Main program started
+2025-01-19 15:00:20,492 - root - Launching lookers and writers
+2025-01-19 15:00:20,492 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 15:00:20,493 - UTILS - Getting PISTE API token
+2025-01-19 15:00:20,594 - UTILS - PISTE API token acquired
+2025-01-19 15:00:20,595 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 15:00:20,595 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 15:00:21,235 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 15:00:21,240 - UTILS - From 100 decision, 1 were kept
+2025-01-19 15:00:21,241 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 15:00:21,241 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 15:00:21,243 - WRITER - Started writing mail body for la Cour de Cassation
+2025-01-19 15:00:21,243 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:00:21,244 - UTILS - Sending GPT summarization request
+2025-01-19 15:00:31,569 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:00:31,597 - UTILS - Sending GPT summarization request
+2025-01-19 15:00:41,402 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:00:41,405 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 15:00:41,406 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:00:41,416 - CE LOOKER - CE looker launched
+2025-01-19 15:00:41,417 - UTILS - Start and end datetime chosen : 2025-01-16 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 15:00:41,417 - CE LOOKER - Getting CE decisions
+2025-01-19 15:00:41,860 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 15:00:42,166 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 15:00:42,540 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 15:00:42,867 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 15:00:43,210 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 15:00:43,554 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 15:00:43,889 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 15:00:44,322 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 15:00:44,323 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 15:00:44,323 - UTILS - From 8 decision, 0 were kept
+2025-01-19 15:00:44,324 - WRITER - Started writing mail body for le Conseil d'Etat
+2025-01-19 15:00:44,324 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:00:44,324 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:00:44,351 - root - Launching mail senders
+2025-01-19 15:00:44,596 - root - Logged into email account successfully
+2025-01-19 15:00:45,891 - root - Sent Cassation mail
+2025-01-19 15:00:47,779 - root - Sent CE mail
+2025-01-19 15:00:47,791 - root - Main program over

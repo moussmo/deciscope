@@ -22,11 +22,12 @@ def _get_decision(url):
 
 def _get_decisions(url, header):
     logger.info("Getting CE decisions")
-    documents = requests.post(url, headers=header).json()['Documents']
-    if documents.status_code!=200 :
+    response = requests.post(url, headers=header)
+    if response.status_code!=200 :
         logger.info("GET Request to get CE decisions failed")
         raise Exception('GET Export request failed')
-    
+    documents = response.json()['Documents']
+
     decision_url = "https://www.conseil-etat.fr/fr/arianeweb/CE/decision/{}/{}"
     decisions = []
     for document in documents:
@@ -49,7 +50,7 @@ def _get_decisions(url, header):
                     "text": decision_text
                     }
         decisions.append(decision)
-        logger.info("Added Decision {} into the list".format(decision['decision_link']))
+        logger.info("Added Decision {} into the unfiltered list".format(decision['decision_link']))
     return decisions
 
 def look_ce_decisions():
