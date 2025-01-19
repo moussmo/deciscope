@@ -1,0 +1,13 @@
+2025-01-19 13:39:51,900 - root - INFO - Main program started
+2025-01-19 13:39:51,901 - root - INFO - Launching lookers and writers
+2025-01-19 13:39:51,901 - looker.cassation_looker - INFO - Cassation looker launched
+2025-01-19 13:39:51,902 - utils.utils - INFO - Getting PISTE API token
+2025-01-19 13:39:51,905 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sandbox-oauth.piste.gouv.fr:443
+2025-01-19 13:39:52,021 - urllib3.connectionpool - DEBUG - https://sandbox-oauth.piste.gouv.fr:443 "POST /api/oauth/token HTTP/1.1" 200 None
+2025-01-19 13:39:52,022 - utils.utils - INFO - PISTE API token acquired
+2025-01-19 13:39:52,023 - utils.utils - INFO - Start and end datetime chosen : 2025-01-09 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 13:39:52,024 - looker.cassation_looker - INFO - Getting Cassation decisions
+2025-01-19 13:39:52,025 - urllib3.connectionpool - DEBUG - Starting new HTTPS connection (1): sandbox-api.piste.gouv.fr:443
+2025-01-19 13:39:52,478 - urllib3.connectionpool - DEBUG - https://sandbox-api.piste.gouv.fr:443 "GET /cassation/judilibre/v1.0/export?batch=0&batch_size=100&publication=r&publication=c&publication=b HTTP/1.1" 200 None
+2025-01-19 13:39:52,729 - utils.utils - INFO - Filtering Decisions according to date and days window
+2025-01-19 13:39:52,734 - looker.cassation_looker - INFO - Reducing Cassation Decisions

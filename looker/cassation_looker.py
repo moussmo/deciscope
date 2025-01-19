@@ -28,7 +28,7 @@ def _reduce_cassation_decisions(decisions):
         reduced_decision["decision_link"] = "https://www.courdecassation.fr/decision/{}".format(decision['id'])
         reduced_decision["text"] = decision['text']
         reduced_decisions.append(reduced_decision)
-        logger.info("Added Decision {} into the list".format(decision['decision_link']))
+        logger.info("Added Decision {} into the list".format(reduced_decision['decision_link']))
     return reduced_decisions
 
 def _sort_decisions(decisions):
