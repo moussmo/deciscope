@@ -15,12 +15,12 @@ def _prep_decision_text(decision, cour_type):
                                     request_type="linkedin", 
                                     cour_type=cour_type)
     html_decision_body = """ 
-        <span style="font-size: 16px; color: teal;"> <b>Date</b> </span> : {}<br>
-        <span style="font-size: 16px; color: teal;"> <b>Chambre</b> </span> : {}<br>
-        <span style="font-size: 16px; color: teal;"> <b>Lien</b> </span> : {}<br>
-        <span style="font-size: 16px; color: teal;"> <b>Publication</b> </span> : {}<br>
-        <span style="font-size: 16px; color: teal;"> <b>Résumé</b> </span>  : {} <br>
-        <span style="font-size: 16px; color: teal;"> <b>Proposition LinkedIn</b> </span>  : {}<br>
+        <span style="color: teal;"> <b>Date</b> </span> : {}<br>
+        <span style="color: teal;"> <b>Chambre</b> </span> : {}<br>
+        <span style="color: teal;"> <b>Lien</b> </span> : {}<br>
+        <span style="color: teal;"> <b>Publication</b> </span> : {}<br>
+        <span style="color: teal;"> <b>Résumé</b> </span>  : {} <br>
+        <span style="color: teal;"> <b>Proposition LinkedIn</b> </span>  : {}<br>
     """.format(decision_date, decision_chamber, decision_link, decision_publication, decision_summary, decision_linkedin)
     return html_decision_body
 

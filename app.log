@@ -780,3 +780,587 @@
 2025-01-19 15:00:45,891 - root - Sent Cassation mail
 2025-01-19 15:00:47,779 - root - Sent CE mail
 2025-01-19 15:00:47,791 - root - Main program over
+2025-01-19 15:02:41,970 - root - Main program started
+2025-01-19 15:02:41,971 - root - Launching lookers and writers
+2025-01-19 15:02:41,971 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 15:02:41,971 - UTILS - Getting PISTE API token
+2025-01-19 15:02:42,100 - UTILS - PISTE API token acquired
+2025-01-19 15:02:42,101 - UTILS - Start and end datetime chosen : 2025-01-09 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 15:02:42,101 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 15:02:42,603 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 15:02:42,607 - UTILS - From 100 decision, 38 were kept
+2025-01-19 15:02:42,608 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 15:02:42,608 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 15:02:42,608 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c to the list
+2025-01-19 15:02:42,609 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 to the list
+2025-01-19 15:02:42,609 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a to the list
+2025-01-19 15:02:42,610 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 to the list
+2025-01-19 15:02:42,610 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 to the list
+2025-01-19 15:02:42,611 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 to the list
+2025-01-19 15:02:42,611 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 to the list
+2025-01-19 15:02:42,611 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a to the list
+2025-01-19 15:02:42,612 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e to the list
+2025-01-19 15:02:42,612 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 to the list
+2025-01-19 15:02:42,612 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 to the list
+2025-01-19 15:02:42,613 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 to the list
+2025-01-19 15:02:42,613 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526d to the list
+2025-01-19 15:02:42,613 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c6012a55caa6d16717 to the list
+2025-01-19 15:02:42,613 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c2012a55caa6d16713 to the list
+2025-01-19 15:02:42,614 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b4beb92359c4b0f33ec7 to the list
+2025-01-19 15:02:42,614 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d9012a55caa6d1672d to the list
+2025-01-19 15:02:42,614 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787dc012a55caa6d16731 to the list
+2025-01-19 15:02:42,615 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526f to the list
+2025-01-19 15:02:42,615 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787ca012a55caa6d1671d to the list
+2025-01-19 15:02:42,615 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c7012a55caa6d16719 to the list
+2025-01-19 15:02:42,616 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c9012a55caa6d1671b to the list
+2025-01-19 15:02:42,616 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c4012a55caa6d16715 to the list
+2025-01-19 15:02:42,616 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d8012a55caa6d1672b to the list
+2025-01-19 15:02:42,617 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd50 to the list
+2025-01-19 15:02:42,617 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd58c79691c828ecdd4c to the list
+2025-01-19 15:02:42,617 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b8059b052b288a484a43 to the list
+2025-01-19 15:02:42,618 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b9b46ab05acc8d83149d to the list
+2025-01-19 15:02:42,618 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787db012a55caa6d1672f to the list
+2025-01-19 15:02:42,618 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787de012a55caa6d16733 to the list
+2025-01-19 15:02:42,619 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876540dd684edf8fb2526b to the list
+2025-01-19 15:02:42,619 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd4e to the list
+2025-01-19 15:02:42,619 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685a to the list
+2025-01-19 15:02:42,620 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce42685e to the list
+2025-01-19 15:02:42,620 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685c to the list
+2025-01-19 15:02:42,621 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426860 to the list
+2025-01-19 15:02:42,621 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426862 to the list
+2025-01-19 15:02:42,622 - WRITER - Started writing mail body for la Cour de Cassation
+2025-01-19 15:02:42,623 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:02:42,623 - UTILS - Sending GPT summarization request
+2025-01-19 15:02:51,049 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:02:51,075 - UTILS - Sending GPT summarization request
+2025-01-19 15:02:59,282 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:02:59,294 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 15:02:59,295 - UTILS - Sending GPT summarization request
+2025-01-19 15:03:08,484 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:03:08,487 - UTILS - Sending GPT summarization request
+2025-01-19 15:03:17,601 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:03:17,604 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c into the mail body
+2025-01-19 15:03:17,604 - UTILS - Sending GPT summarization request
+2025-01-19 15:03:27,819 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:03:27,822 - UTILS - Sending GPT summarization request
+2025-01-19 15:03:39,291 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:03:39,297 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 into the mail body
+2025-01-19 15:03:39,297 - UTILS - Sending GPT summarization request
+2025-01-19 15:03:50,411 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:03:50,433 - UTILS - Sending GPT summarization request
+2025-01-19 15:04:00,860 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:04:00,872 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a into the mail body
+2025-01-19 15:04:00,874 - UTILS - Sending GPT summarization request
+2025-01-19 15:04:09,788 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:04:09,799 - UTILS - Sending GPT summarization request
+2025-01-19 15:04:18,284 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:04:18,292 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 into the mail body
+2025-01-19 15:04:18,293 - UTILS - Sending GPT summarization request
+2025-01-19 15:04:26,273 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:04:26,284 - UTILS - Sending GPT summarization request
+2025-01-19 15:04:33,635 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:04:33,651 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 into the mail body
+2025-01-19 15:04:33,653 - UTILS - Sending GPT summarization request
+2025-01-19 15:04:43,475 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:04:43,485 - UTILS - Sending GPT summarization request
+2025-01-19 15:04:54,860 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:04:54,873 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 into the mail body
+2025-01-19 15:04:54,874 - UTILS - Sending GPT summarization request
+2025-01-19 15:05:02,774 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:05:02,784 - UTILS - Sending GPT summarization request
+2025-01-19 15:05:10,560 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:05:10,569 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 into the mail body
+2025-01-19 15:05:10,569 - UTILS - Sending GPT summarization request
+2025-01-19 15:05:17,284 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:05:17,296 - UTILS - Sending GPT summarization request
+2025-01-19 15:05:25,705 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:05:25,716 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a into the mail body
+2025-01-19 15:05:25,718 - UTILS - Sending GPT summarization request
+2025-01-19 15:05:34,473 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:05:34,512 - UTILS - Sending GPT summarization request
+2025-01-19 15:05:44,168 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:05:44,180 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e into the mail body
+2025-01-19 15:05:44,182 - UTILS - Sending GPT summarization request
+2025-01-19 15:05:51,831 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:05:51,836 - UTILS - Sending GPT summarization request
+2025-01-19 15:06:00,059 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:06:00,067 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 into the mail body
+2025-01-19 15:06:00,068 - UTILS - Sending GPT summarization request
+2025-01-19 15:06:08,674 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:06:08,686 - UTILS - Sending GPT summarization request
+2025-01-19 15:06:17,804 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:06:17,814 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 into the mail body
+2025-01-19 15:06:17,814 - UTILS - Sending GPT summarization request
+2025-01-19 15:06:27,487 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:06:27,503 - UTILS - Sending GPT summarization request
+2025-01-19 15:06:43,949 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:06:43,979 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 into the mail body
+2025-01-19 15:06:43,981 - UTILS - Sending GPT summarization request
+2025-01-19 15:06:50,273 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:06:50,277 - UTILS - Sending GPT summarization request
+2025-01-19 15:06:59,580 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:06:59,591 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526d into the mail body
+2025-01-19 15:06:59,593 - UTILS - Sending GPT summarization request
+2025-01-19 15:07:10,549 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:07:10,602 - UTILS - Sending GPT summarization request
+2025-01-19 15:07:18,989 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:07:19,004 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c6012a55caa6d16717 into the mail body
+2025-01-19 15:07:19,005 - UTILS - Sending GPT summarization request
+2025-01-19 15:07:27,705 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:07:27,711 - UTILS - Sending GPT summarization request
+2025-01-19 15:07:36,309 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:07:36,321 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c2012a55caa6d16713 into the mail body
+2025-01-19 15:07:36,323 - UTILS - Sending GPT summarization request
+2025-01-19 15:07:52,123 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:07:52,139 - UTILS - Sending GPT summarization request
+2025-01-19 15:07:59,362 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:07:59,386 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6787b4beb92359c4b0f33ec7 into the mail body
+2025-01-19 15:07:59,387 - UTILS - Sending GPT summarization request
+2025-01-19 15:08:07,917 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:08:07,932 - UTILS - Sending GPT summarization request
+2025-01-19 15:08:16,061 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:08:16,067 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787d9012a55caa6d1672d into the mail body
+2025-01-19 15:08:16,067 - UTILS - Sending GPT summarization request
+2025-01-19 15:08:24,435 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:08:24,462 - UTILS - Sending GPT summarization request
+2025-01-19 15:08:33,008 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:08:33,018 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787dc012a55caa6d16731 into the mail body
+2025-01-19 15:08:33,020 - UTILS - Sending GPT summarization request
+2025-01-19 15:08:43,835 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:08:43,848 - UTILS - Sending GPT summarization request
+2025-01-19 15:08:53,074 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:08:53,083 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526f into the mail body
+2025-01-19 15:08:53,084 - UTILS - Sending GPT summarization request
+2025-01-19 15:09:03,441 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:09:03,452 - UTILS - Sending GPT summarization request
+2025-01-19 15:09:11,227 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:09:11,243 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787ca012a55caa6d1671d into the mail body
+2025-01-19 15:09:11,245 - UTILS - Sending GPT summarization request
+2025-01-19 15:09:23,191 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:09:23,202 - UTILS - Sending GPT summarization request
+2025-01-19 15:09:36,079 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:09:36,094 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c7012a55caa6d16719 into the mail body
+2025-01-19 15:09:36,095 - UTILS - Sending GPT summarization request
+2025-01-19 15:09:45,439 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:09:45,484 - UTILS - Sending GPT summarization request
+2025-01-19 15:09:53,452 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:09:53,467 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c9012a55caa6d1671b into the mail body
+2025-01-19 15:09:53,469 - UTILS - Sending GPT summarization request
+2025-01-19 15:10:03,133 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:10:03,143 - UTILS - Sending GPT summarization request
+2025-01-19 15:10:11,898 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:10:11,933 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c4012a55caa6d16715 into the mail body
+2025-01-19 15:10:11,935 - UTILS - Sending GPT summarization request
+2025-01-19 15:10:23,320 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:10:23,364 - UTILS - Sending GPT summarization request
+2025-01-19 15:10:33,265 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:10:33,283 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787d8012a55caa6d1672b into the mail body
+2025-01-19 15:10:33,284 - UTILS - Sending GPT summarization request
+2025-01-19 15:10:40,309 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:10:40,333 - UTILS - Sending GPT summarization request
+2025-01-19 15:10:46,204 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:10:46,214 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd50 into the mail body
+2025-01-19 15:10:46,216 - UTILS - Sending GPT summarization request
+2025-01-19 15:10:55,384 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:10:55,420 - UTILS - Sending GPT summarization request
+2025-01-19 15:11:04,408 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:11:04,420 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bd58c79691c828ecdd4c into the mail body
+2025-01-19 15:11:04,422 - UTILS - Sending GPT summarization request
+2025-01-19 15:11:11,642 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:11:11,649 - UTILS - Sending GPT summarization request
+2025-01-19 15:11:24,931 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:11:24,944 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6787b8059b052b288a484a43 into the mail body
+2025-01-19 15:11:24,946 - UTILS - Sending GPT summarization request
+2025-01-19 15:11:35,322 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:11:35,334 - UTILS - Sending GPT summarization request
+2025-01-19 15:11:41,911 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:11:41,929 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6787b9b46ab05acc8d83149d into the mail body
+2025-01-19 15:11:41,930 - UTILS - Sending GPT summarization request
+2025-01-19 15:11:51,945 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:11:51,958 - UTILS - Sending GPT summarization request
+2025-01-19 15:12:02,963 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:12:02,973 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787db012a55caa6d1672f into the mail body
+2025-01-19 15:12:02,974 - UTILS - Sending GPT summarization request
+2025-01-19 15:12:12,184 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:12:12,195 - UTILS - Sending GPT summarization request
+2025-01-19 15:12:21,652 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:12:21,679 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787de012a55caa6d16733 into the mail body
+2025-01-19 15:12:21,681 - UTILS - Sending GPT summarization request
+2025-01-19 15:12:29,746 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:12:29,758 - UTILS - Sending GPT summarization request
+2025-01-19 15:12:39,291 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:12:39,297 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876540dd684edf8fb2526b into the mail body
+2025-01-19 15:12:39,298 - UTILS - Sending GPT summarization request
+2025-01-19 15:12:48,129 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:12:48,143 - UTILS - Sending GPT summarization request
+2025-01-19 15:12:56,313 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:12:56,325 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd4e into the mail body
+2025-01-19 15:12:56,327 - UTILS - Sending GPT summarization request
+2025-01-19 15:13:05,662 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:13:05,725 - UTILS - Sending GPT summarization request
+2025-01-19 15:13:12,231 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:13:12,243 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685a into the mail body
+2025-01-19 15:13:12,244 - UTILS - Sending GPT summarization request
+2025-01-19 15:13:18,794 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:13:18,813 - UTILS - Sending GPT summarization request
+2025-01-19 15:13:30,342 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:13:30,356 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861076664cdee6ce42685e into the mail body
+2025-01-19 15:13:30,357 - UTILS - Sending GPT summarization request
+2025-01-19 15:13:36,125 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:13:36,134 - UTILS - Sending GPT summarization request
+2025-01-19 15:13:45,296 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:13:45,308 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685c into the mail body
+2025-01-19 15:13:45,310 - UTILS - Sending GPT summarization request
+2025-01-19 15:13:55,034 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:13:55,043 - UTILS - Sending GPT summarization request
+2025-01-19 15:14:05,882 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:14:05,889 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426860 into the mail body
+2025-01-19 15:14:05,890 - UTILS - Sending GPT summarization request
+2025-01-19 15:14:19,910 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:14:19,921 - UTILS - Sending GPT summarization request
+2025-01-19 15:14:33,103 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:14:33,108 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426862 into the mail body
+2025-01-19 15:14:33,109 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:14:33,138 - CE LOOKER - CE looker launched
+2025-01-19 15:14:33,138 - UTILS - Start and end datetime chosen : 2025-01-09 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 15:14:33,139 - CE LOOKER - Getting CE decisions
+2025-01-19 15:14:33,662 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 15:14:34,006 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 15:14:34,360 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 15:14:34,683 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 15:14:35,015 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 15:14:35,353 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 15:14:35,700 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 15:14:36,074 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 15:14:36,074 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 15:14:36,075 - UTILS - From 8 decision, 6 were kept
+2025-01-19 15:14:36,075 - WRITER - Started writing mail body for le Conseil d'Etat
+2025-01-19 15:14:36,075 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:14:36,076 - UTILS - Sending GPT summarization request
+2025-01-19 15:14:42,521 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:14:42,531 - UTILS - Sending GPT summarization request
+2025-01-19 15:14:51,581 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:14:51,625 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the mail body
+2025-01-19 15:14:51,626 - UTILS - Sending GPT summarization request
+2025-01-19 15:15:02,579 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:15:02,593 - UTILS - Sending GPT summarization request
+2025-01-19 15:15:09,990 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:15:10,030 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the mail body
+2025-01-19 15:15:10,032 - UTILS - Sending GPT summarization request
+2025-01-19 15:15:21,410 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:15:21,424 - UTILS - Sending GPT summarization request
+2025-01-19 15:15:30,074 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:15:30,206 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the mail body
+2025-01-19 15:15:30,207 - UTILS - Sending GPT summarization request
+2025-01-19 15:15:41,508 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:15:41,512 - UTILS - Sending GPT summarization request
+2025-01-19 15:15:49,786 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:15:49,792 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the mail body
+2025-01-19 15:15:49,793 - UTILS - Sending GPT summarization request
+2025-01-19 15:15:58,997 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:15:59,021 - UTILS - Sending GPT summarization request
+2025-01-19 15:16:10,353 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:16:10,373 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the mail body
+2025-01-19 15:16:10,375 - UTILS - Sending GPT summarization request
+2025-01-19 15:16:30,214 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:16:30,220 - UTILS - Sending GPT summarization request
+2025-01-19 15:16:38,030 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 15:16:38,041 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the mail body
+2025-01-19 15:16:38,042 - UTILS - Today is : 19 janvier 2025
+2025-01-19 15:16:38,112 - root - Launching mail senders
+2025-01-19 15:16:38,359 - root - Logged into email account successfully
+2025-01-19 15:16:40,511 - root - Sent Cassation mail
+2025-01-19 15:16:41,171 - root - Sent CE mail
+2025-01-19 15:16:41,184 - root - Main program over
+2025-01-19 18:18:40,215 - root - Main program started
+2025-01-19 18:18:40,244 - root - Launching lookers and writers
+2025-01-19 18:18:40,245 - CASSATION LOOKER - Cassation looker launched
+2025-01-19 18:18:40,245 - UTILS - Getting PISTE API token
+2025-01-19 18:18:40,347 - UTILS - PISTE API token acquired
+2025-01-19 18:18:40,348 - UTILS - Start and end datetime chosen : 2025-01-09 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 18:18:40,349 - CASSATION LOOKER - Getting Cassation decisions
+2025-01-19 18:18:40,897 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 18:18:40,903 - UTILS - From 100 decision, 38 were kept
+2025-01-19 18:18:40,904 - CASSATION LOOKER - Reducing Cassation Decisions
+2025-01-19 18:18:40,904 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f to the list
+2025-01-19 18:18:40,904 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c to the list
+2025-01-19 18:18:40,905 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 to the list
+2025-01-19 18:18:40,905 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a to the list
+2025-01-19 18:18:40,905 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 to the list
+2025-01-19 18:18:40,905 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 to the list
+2025-01-19 18:18:40,906 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 to the list
+2025-01-19 18:18:40,906 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 to the list
+2025-01-19 18:18:40,906 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a to the list
+2025-01-19 18:18:40,907 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e to the list
+2025-01-19 18:18:40,907 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 to the list
+2025-01-19 18:18:40,907 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 to the list
+2025-01-19 18:18:40,908 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 to the list
+2025-01-19 18:18:40,908 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526d to the list
+2025-01-19 18:18:40,908 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c6012a55caa6d16717 to the list
+2025-01-19 18:18:40,909 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c2012a55caa6d16713 to the list
+2025-01-19 18:18:40,909 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b4beb92359c4b0f33ec7 to the list
+2025-01-19 18:18:40,909 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d9012a55caa6d1672d to the list
+2025-01-19 18:18:40,909 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787dc012a55caa6d16731 to the list
+2025-01-19 18:18:40,910 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526f to the list
+2025-01-19 18:18:40,910 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787ca012a55caa6d1671d to the list
+2025-01-19 18:18:40,911 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c7012a55caa6d16719 to the list
+2025-01-19 18:18:40,911 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c9012a55caa6d1671b to the list
+2025-01-19 18:18:40,911 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787c4012a55caa6d16715 to the list
+2025-01-19 18:18:40,912 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787d8012a55caa6d1672b to the list
+2025-01-19 18:18:40,912 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd50 to the list
+2025-01-19 18:18:40,912 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd58c79691c828ecdd4c to the list
+2025-01-19 18:18:40,913 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b8059b052b288a484a43 to the list
+2025-01-19 18:18:40,913 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6787b9b46ab05acc8d83149d to the list
+2025-01-19 18:18:40,914 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787db012a55caa6d1672f to the list
+2025-01-19 18:18:40,915 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/678787de012a55caa6d16733 to the list
+2025-01-19 18:18:40,916 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67876540dd684edf8fb2526b to the list
+2025-01-19 18:18:40,916 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd4e to the list
+2025-01-19 18:18:40,917 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685a to the list
+2025-01-19 18:18:40,917 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce42685e to the list
+2025-01-19 18:18:40,918 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685c to the list
+2025-01-19 18:18:40,918 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426860 to the list
+2025-01-19 18:18:40,919 - CASSATION LOOKER - Added Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426862 to the list
+2025-01-19 18:18:40,920 - WRITER - Started writing mail body for la Cour de Cassation
+2025-01-19 18:18:40,920 - UTILS - Today is : 19 janvier 2025
+2025-01-19 18:18:40,921 - UTILS - Sending GPT summarization request
+2025-01-19 18:18:50,619 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:18:50,631 - UTILS - Sending GPT summarization request
+2025-01-19 18:18:58,938 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:18:58,964 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678a0e4499721e998b0d5d4f into the mail body
+2025-01-19 18:18:58,964 - UTILS - Sending GPT summarization request
+2025-01-19 18:19:07,848 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:19:07,853 - UTILS - Sending GPT summarization request
+2025-01-19 18:19:15,243 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:19:15,248 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb79c79691c828ecdd3c into the mail body
+2025-01-19 18:19:15,248 - UTILS - Sending GPT summarization request
+2025-01-19 18:19:26,909 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:19:26,915 - UTILS - Sending GPT summarization request
+2025-01-19 18:19:39,991 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:19:40,005 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb86c79691c828ecdd48 into the mail body
+2025-01-19 18:19:40,006 - UTILS - Sending GPT summarization request
+2025-01-19 18:19:49,600 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:19:49,612 - UTILS - Sending GPT summarization request
+2025-01-19 18:19:56,647 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:19:56,655 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb88c79691c828ecdd4a into the mail body
+2025-01-19 18:19:56,656 - UTILS - Sending GPT summarization request
+2025-01-19 18:20:07,142 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:20:07,149 - UTILS - Sending GPT summarization request
+2025-01-19 18:20:17,270 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:20:17,281 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb80c79691c828ecdd40 into the mail body
+2025-01-19 18:20:17,282 - UTILS - Sending GPT summarization request
+2025-01-19 18:20:24,502 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:20:24,506 - UTILS - Sending GPT summarization request
+2025-01-19 18:20:37,908 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:20:37,914 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb72c79691c828ecdd34 into the mail body
+2025-01-19 18:20:37,915 - UTILS - Sending GPT summarization request
+2025-01-19 18:20:47,746 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:20:47,752 - UTILS - Sending GPT summarization request
+2025-01-19 18:20:56,719 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:20:56,723 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb75c79691c828ecdd38 into the mail body
+2025-01-19 18:20:56,724 - UTILS - Sending GPT summarization request
+2025-01-19 18:21:05,174 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:21:05,195 - UTILS - Sending GPT summarization request
+2025-01-19 18:21:13,377 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:21:13,386 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb84c79691c828ecdd46 into the mail body
+2025-01-19 18:21:13,387 - UTILS - Sending GPT summarization request
+2025-01-19 18:21:20,067 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:21:20,072 - UTILS - Sending GPT summarization request
+2025-01-19 18:21:27,762 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:21:27,770 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb77c79691c828ecdd3a into the mail body
+2025-01-19 18:21:27,771 - UTILS - Sending GPT summarization request
+2025-01-19 18:21:35,237 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:21:35,255 - UTILS - Sending GPT summarization request
+2025-01-19 18:21:44,218 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:21:44,228 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb7bc79691c828ecdd3e into the mail body
+2025-01-19 18:21:44,230 - UTILS - Sending GPT summarization request
+2025-01-19 18:21:53,639 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:21:53,654 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:01,082 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:01,088 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb83c79691c828ecdd44 into the mail body
+2025-01-19 18:22:01,089 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:09,199 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:09,223 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:16,174 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:16,221 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb81c79691c828ecdd42 into the mail body
+2025-01-19 18:22:16,222 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:25,922 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:25,927 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:33,662 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:33,675 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bb74c79691c828ecdd36 into the mail body
+2025-01-19 18:22:33,675 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:41,365 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:41,377 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:50,553 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:50,567 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526d into the mail body
+2025-01-19 18:22:50,568 - UTILS - Sending GPT summarization request
+2025-01-19 18:22:58,944 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:22:58,968 - UTILS - Sending GPT summarization request
+2025-01-19 18:23:06,408 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:23:06,413 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c6012a55caa6d16717 into the mail body
+2025-01-19 18:23:06,414 - UTILS - Sending GPT summarization request
+2025-01-19 18:23:15,233 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:23:15,243 - UTILS - Sending GPT summarization request
+2025-01-19 18:23:28,513 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:23:28,520 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c2012a55caa6d16713 into the mail body
+2025-01-19 18:23:28,520 - UTILS - Sending GPT summarization request
+2025-01-19 18:23:38,404 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:23:38,411 - UTILS - Sending GPT summarization request
+2025-01-19 18:23:47,662 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:23:47,670 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6787b4beb92359c4b0f33ec7 into the mail body
+2025-01-19 18:23:47,670 - UTILS - Sending GPT summarization request
+2025-01-19 18:23:57,618 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:23:57,633 - UTILS - Sending GPT summarization request
+2025-01-19 18:24:07,066 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:24:07,079 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787d9012a55caa6d1672d into the mail body
+2025-01-19 18:24:07,079 - UTILS - Sending GPT summarization request
+2025-01-19 18:24:15,386 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:24:15,413 - UTILS - Sending GPT summarization request
+2025-01-19 18:24:23,563 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:24:23,573 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787dc012a55caa6d16731 into the mail body
+2025-01-19 18:24:23,574 - UTILS - Sending GPT summarization request
+2025-01-19 18:24:34,302 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:24:34,308 - UTILS - Sending GPT summarization request
+2025-01-19 18:24:49,132 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:24:49,141 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876541dd684edf8fb2526f into the mail body
+2025-01-19 18:24:49,142 - UTILS - Sending GPT summarization request
+2025-01-19 18:24:57,665 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:24:57,677 - UTILS - Sending GPT summarization request
+2025-01-19 18:25:05,706 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:25:05,711 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787ca012a55caa6d1671d into the mail body
+2025-01-19 18:25:05,711 - UTILS - Sending GPT summarization request
+2025-01-19 18:25:16,863 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:25:16,901 - UTILS - Sending GPT summarization request
+2025-01-19 18:25:25,854 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:25:25,873 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c7012a55caa6d16719 into the mail body
+2025-01-19 18:25:25,874 - UTILS - Sending GPT summarization request
+2025-01-19 18:25:35,564 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:25:35,570 - UTILS - Sending GPT summarization request
+2025-01-19 18:25:49,053 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:25:49,060 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c9012a55caa6d1671b into the mail body
+2025-01-19 18:25:49,060 - UTILS - Sending GPT summarization request
+2025-01-19 18:26:01,337 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:26:01,364 - UTILS - Sending GPT summarization request
+2025-01-19 18:26:10,501 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:26:10,505 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787c4012a55caa6d16715 into the mail body
+2025-01-19 18:26:10,505 - UTILS - Sending GPT summarization request
+2025-01-19 18:26:22,283 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:26:22,301 - UTILS - Sending GPT summarization request
+2025-01-19 18:26:30,661 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:26:30,675 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787d8012a55caa6d1672b into the mail body
+2025-01-19 18:26:30,675 - UTILS - Sending GPT summarization request
+2025-01-19 18:26:41,583 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:26:41,590 - UTILS - Sending GPT summarization request
+2025-01-19 18:26:49,045 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:26:49,049 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd50 into the mail body
+2025-01-19 18:26:49,050 - UTILS - Sending GPT summarization request
+2025-01-19 18:26:59,298 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:26:59,307 - UTILS - Sending GPT summarization request
+2025-01-19 18:27:07,232 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:27:07,250 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bd58c79691c828ecdd4c into the mail body
+2025-01-19 18:27:07,251 - UTILS - Sending GPT summarization request
+2025-01-19 18:27:16,215 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:27:16,224 - UTILS - Sending GPT summarization request
+2025-01-19 18:27:23,647 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:27:23,651 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6787b8059b052b288a484a43 into the mail body
+2025-01-19 18:27:23,651 - UTILS - Sending GPT summarization request
+2025-01-19 18:27:31,715 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:27:31,722 - UTILS - Sending GPT summarization request
+2025-01-19 18:27:40,337 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:27:40,354 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6787b9b46ab05acc8d83149d into the mail body
+2025-01-19 18:27:40,354 - UTILS - Sending GPT summarization request
+2025-01-19 18:27:48,820 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:27:48,824 - UTILS - Sending GPT summarization request
+2025-01-19 18:27:57,980 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:27:57,984 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787db012a55caa6d1672f into the mail body
+2025-01-19 18:27:57,985 - UTILS - Sending GPT summarization request
+2025-01-19 18:28:06,093 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:28:06,106 - UTILS - Sending GPT summarization request
+2025-01-19 18:28:15,053 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:28:15,062 - WRITER - Injected Decision https://www.courdecassation.fr/decision/678787de012a55caa6d16733 into the mail body
+2025-01-19 18:28:15,063 - UTILS - Sending GPT summarization request
+2025-01-19 18:28:41,001 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:28:41,010 - UTILS - Sending GPT summarization request
+2025-01-19 18:28:51,756 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:28:51,765 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67876540dd684edf8fb2526b into the mail body
+2025-01-19 18:28:51,765 - UTILS - Sending GPT summarization request
+2025-01-19 18:29:01,425 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:29:01,427 - UTILS - Sending GPT summarization request
+2025-01-19 18:29:09,028 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:29:09,037 - WRITER - Injected Decision https://www.courdecassation.fr/decision/6788bd59c79691c828ecdd4e into the mail body
+2025-01-19 18:29:09,038 - UTILS - Sending GPT summarization request
+2025-01-19 18:29:23,707 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:29:23,723 - UTILS - Sending GPT summarization request
+2025-01-19 18:29:33,500 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:29:33,515 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685a into the mail body
+2025-01-19 18:29:33,516 - UTILS - Sending GPT summarization request
+2025-01-19 18:29:42,551 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:29:42,598 - UTILS - Sending GPT summarization request
+2025-01-19 18:29:51,198 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:29:51,207 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861076664cdee6ce42685e into the mail body
+2025-01-19 18:29:51,208 - UTILS - Sending GPT summarization request
+2025-01-19 18:30:01,052 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:30:01,055 - UTILS - Sending GPT summarization request
+2025-01-19 18:30:20,491 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:30:20,497 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861075664cdee6ce42685c into the mail body
+2025-01-19 18:30:20,498 - UTILS - Sending GPT summarization request
+2025-01-19 18:30:33,081 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:30:33,085 - UTILS - Sending GPT summarization request
+2025-01-19 18:30:41,195 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:30:41,204 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426860 into the mail body
+2025-01-19 18:30:41,205 - UTILS - Sending GPT summarization request
+2025-01-19 18:30:52,675 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:30:52,683 - UTILS - Sending GPT summarization request
+2025-01-19 18:31:01,999 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:31:02,005 - WRITER - Injected Decision https://www.courdecassation.fr/decision/67861076664cdee6ce426862 into the mail body
+2025-01-19 18:31:02,006 - UTILS - Today is : 19 janvier 2025
+2025-01-19 18:31:02,040 - CE LOOKER - CE looker launched
+2025-01-19 18:31:02,041 - UTILS - Start and end datetime chosen : 2025-01-09 11:00:00 to 2025-01-19 11:00:00
+2025-01-19 18:31:02,041 - CE LOOKER - Getting CE decisions
+2025-01-19 18:31:02,562 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the unfiltered list
+2025-01-19 18:31:02,894 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the unfiltered list
+2025-01-19 18:31:03,236 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the unfiltered list
+2025-01-19 18:31:03,580 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the unfiltered list
+2025-01-19 18:31:03,894 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the unfiltered list
+2025-01-19 18:31:04,238 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the unfiltered list
+2025-01-19 18:31:04,570 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/492854 into the unfiltered list
+2025-01-19 18:31:04,901 - CE LOOKER - Added Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2024-12-31/484422 into the unfiltered list
+2025-01-19 18:31:04,902 - UTILS - Filtering Decisions according to date and days window
+2025-01-19 18:31:04,903 - UTILS - From 8 decision, 6 were kept
+2025-01-19 18:31:04,903 - WRITER - Started writing mail body for le Conseil d'Etat
+2025-01-19 18:31:04,904 - UTILS - Today is : 19 janvier 2025
+2025-01-19 18:31:04,904 - UTILS - Sending GPT summarization request
+2025-01-19 18:31:13,826 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:31:13,834 - UTILS - Sending GPT summarization request
+2025-01-19 18:31:23,838 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:31:23,848 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/489721 into the mail body
+2025-01-19 18:31:23,849 - UTILS - Sending GPT summarization request
+2025-01-19 18:31:30,627 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:31:30,637 - UTILS - Sending GPT summarization request
+2025-01-19 18:31:41,881 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:31:41,886 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/476885 into the mail body
+2025-01-19 18:31:41,887 - UTILS - Sending GPT summarization request
+2025-01-19 18:31:50,303 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:31:50,326 - UTILS - Sending GPT summarization request
+2025-01-19 18:31:59,701 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:31:59,707 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473898 into the mail body
+2025-01-19 18:31:59,708 - UTILS - Sending GPT summarization request
+2025-01-19 18:32:08,197 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:32:08,210 - UTILS - Sending GPT summarization request
+2025-01-19 18:32:14,392 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:32:14,398 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/473736 into the mail body
+2025-01-19 18:32:14,399 - UTILS - Sending GPT summarization request
+2025-01-19 18:32:23,021 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:32:23,026 - UTILS - Sending GPT summarization request
+2025-01-19 18:32:34,049 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:32:34,052 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-15/467615 into the mail body
+2025-01-19 18:32:34,053 - UTILS - Sending GPT summarization request
+2025-01-19 18:32:49,011 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:32:49,015 - UTILS - Sending GPT summarization request
+2025-01-19 18:33:05,257 - httpx - HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2025-01-19 18:33:05,281 - WRITER - Injected Decision https://www.conseil-etat.fr/fr/arianeweb/CE/decision/2025-01-14/500105 into the mail body
+2025-01-19 18:33:05,282 - UTILS - Today is : 19 janvier 2025
+2025-01-19 18:33:05,314 - root - Launching mail senders
+2025-01-19 18:33:05,662 - root - Logged into email account successfully
+2025-01-19 18:33:07,052 - root - Sent Cassation mail
+2025-01-19 18:33:08,415 - root - Sent CE mail
+2025-01-19 18:33:08,426 - root - Main program over
