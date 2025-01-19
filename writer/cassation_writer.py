@@ -1,15 +1,12 @@
-import smtplib
-from email.mime.multipart import MIMEMultipart
-from email.mime.text import MIMEText
 from utils.utils import gpt_summarize_decision
-from utils.constants import DECISION_DELIMITER, CASSATION_PUBLICATION_DICT
+from utils.constants import CASSATION_PUBLICATION_DICT
 
 def _prep_decision_text(decision):
     decision_date = decision['decision_date']
     decision_link = "https://www.courdecassation.fr/decision/{}".format(decision['id'])
     decision_publication = ', '.join([CASSATION_PUBLICATION_DICT[p] for p in decision['publication']])
     decision_text = gpt_summarize_decision(decision['text'])
-    email_text = "{}\n\n{}\nPublication : {}\n{}\n\n{}\n\n".format(DECISION_DELIMITER, decision_date, decision_publication, decision_link, decision_text)
+    email_text = "{}\nPublication : {}\n{}\n\n{}\n\n".format(decision_date, decision_publication, decision_link, decision_text)
     return email_text
 
 def write_cassation_mail_body(decisions):
