@@ -1,5 +1,5 @@
 import logging
-from utils.utils import gpt_summarize_decision, gpt_generate_linkedin_post, get_today
+from utils.utils import gpt_request, get_today
 
 logger = logging.getLogger(__name__)
 
@@ -8,8 +8,12 @@ def _prep_decision_text(decision, cour_type):
     decision_link = decision['decision_link']
     decision_chamber = decision['decision_chamber']
     decision_publication = decision['decision_publication']
-    decision_summary = gpt_summarize_decision(decision['text'], cour_type)
-    decision_linkedin = gpt_generate_linkedin_post(decision_summary)
+    decision_summary = gpt_request(request_text=decision['text'], 
+                                   request_type="summarization", 
+                                   cour_type=cour_type)
+    decision_linkedin = gpt_request(request_text=decision_summary, 
+                                    request_type="linkedin", 
+                                    cour_type=cour_type)
     html_decision_body = """ 
         <b>Date</b> : {}<br>
         <b>Chambre</b> : {}<br>
