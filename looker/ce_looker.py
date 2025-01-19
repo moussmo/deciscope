@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from utils.utils import get_datetime_limits, filter_decisions
 from utils.constants import CE_PUBLICATION_FILTERS, CE_PUBLICATION_DICT
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("CE LOOKER")
 
 def _get_decision(url):
     decision = requests.get(url)

@@ -1,7 +1,7 @@
 import logging
 from utils.utils import gpt_request, get_today
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("WRITER")
 
 def _prep_decision_text(decision, cour_type):
     decision_date = decision['decision_date']

@@ -5,7 +5,7 @@ from utils.constants import DAYS_WINDOW, API_KEY
 import openai
 from openai import OpenAI
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("UTILS")
 
 def get_piste_header():
     logger.info("Getting PISTE API token")

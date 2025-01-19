@@ -3,7 +3,7 @@ import requests
 from utils.utils import get_piste_header, get_datetime_limits, filter_decisions
 from utils.constants import CASSATION_PUBLICATION_FILTERS, CASSATION_PUBLICATION_DICT
 
-logger = logging.getLogger(__name__)
+logger = logging.getLogger("CASSATION LOOKER")
 
 def _get_decisions(endpoint, header):
     logger.info("Getting Cassation decisions")
@@ -28,7 +28,7 @@ def _reduce_cassation_decisions(decisions):
         reduced_decision["decision_link"] = "https://www.courdecassation.fr/decision/{}".format(decision['id'])
         reduced_decision["text"] = decision['text']
         reduced_decisions.append(reduced_decision)
-        logger.info("Added Decision {} into the list".format(reduced_decision['decision_link']))
+        logger.info("Added Decision {} to the list".format(reduced_decision['decision_link']))
     return reduced_decisions
 
 def _sort_decisions(decisions):
