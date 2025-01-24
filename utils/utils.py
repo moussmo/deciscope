@@ -4,8 +4,10 @@ import markdown
 from datetime import datetime, time, timedelta, date
 from utils.constants import DAYS_WINDOW, API_KEY
 import openai
+import json
 from openai import OpenAI
 import locale
+import boto3
 
 locale.setlocale(locale.LC_TIME, 'fr_FR.UTF-8')
 logger = logging.getLogger("UTILS")
@@ -25,6 +27,23 @@ def get_piste_header():
     
     logger.info("PISTE API token acquired")
     return header
+
+
+def get_secrets():
+    secret_name = "deciscope_secrets"
+    region_name = "eu-north-1"
+
+    session = boto3.session.Session()
+    client = session.client(
+        service_name='secretsmanager',
+        region_name=region_name
+    )
+
+    get_secret_value_response = client.get_secret_value(
+        SecretId=secret_name
+    )
+    secret = json.loads(get_secret_value_response['SecretString'])
+    return secret
 
 def get_today():
     today = date.today()
@@ -47,8 +66,11 @@ def gpt_request(request_text, request_type, cour_type):
     else:
          message = "« Transforme-moi ce résumé en post linkedin (je suis avocat et m'adresse à d'autres avocats et clients intéressés par le sujet): {}»".format(request_text) 
 
+    secrets = get_secrets()
+    CHATGPT_API_KEY = secrets['CHATGPT_API_KEY']
+
     logger.info("Sending GPT summarization request")
-    client = OpenAI(api_key=API_KEY)
+    client = OpenAI(api_key=CHATGPT_API_KEY)
     try:
         completion = client.chat.completions.create(
             model="gpt-4o-mini",
