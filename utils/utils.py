@@ -2,7 +2,7 @@ import logging
 import requests
 import markdown
 from datetime import datetime, time, timedelta, date
-from utils.constants import DAYS_WINDOW, API_KEY
+from utils.constants import DAYS_WINDOW
 import openai
 import json
 from openai import OpenAI
