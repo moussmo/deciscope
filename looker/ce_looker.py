@@ -58,9 +58,7 @@ def look_ce_decisions():
     url = "https://www.conseil-etat.fr/xsearch?advanced=1&type=json&SourceStr4=AW_DCE&text.add=&synonyms=true&scmode=smart&SkipCount=50&SkipFrom=0&sort=SourceDateTime1.desc,SourceStr5.desc"
     header = {"content-type":"application/json"}
 
-    start_datetime, end_datetime = get_datetime_limits()
-
     decisions = _get_decisions(url, header)
-    filtered_decisions = filter_decisions(decisions, start_datetime, end_datetime)
+    filtered_decisions = filter_decisions(decisions, 'ce')
 
     return filtered_decisions

@@ -39,10 +39,9 @@ def look_cassation_decisions():
 
     endpoint = 'https://sandbox-api.piste.gouv.fr/cassation/judilibre/v1.0/'
     header = get_piste_header()
-    start_datetime, end_datetime = get_datetime_limits()
 
     decisions = _get_decisions(endpoint, header)
-    filtered_decisions = filter_decisions(decisions, start_datetime, end_datetime)
+    filtered_decisions = filter_decisions(decisions, 'cassation')
     reduced_decisions = _reduce_cassation_decisions(filtered_decisions)
 
     return reduced_decisions

@@ -2,7 +2,7 @@ import logging
 import requests
 import markdown
 from datetime import datetime, time, timedelta, date
-from utils.constants import DAYS_WINDOW
+from utils.constants import DAYS_WINDOW, BUCKET_NAME, CASSATION_DECISIONS_S3_FILE, CE_DECISIONS_S3_FILE
 import openai
 import json
 from openai import OpenAI
@@ -27,7 +27,6 @@ def get_piste_header():
     
     logger.info("PISTE API token acquired")
     return header
-
 
 def get_secrets():
     secret_name = "deciscope_secrets"
@@ -92,8 +91,33 @@ def gpt_request(request_text, request_type, cour_type):
         logging.info(f"An error occurred: {e}")
     return "GPT request for summarization or linkedin post generation failed for this decision." 
     
-def filter_decisions(decisions, start_datetime, end_datetime):
+def filter_decisions_by_date(decisions, start_datetime, end_datetime):
     logger.info("Filtering Decisions according to date and days window")
     filtered_decisions = [decision for decision in decisions if start_datetime<=datetime.strptime(decision['decision_datetime'], '%Y-%m-%dT%H:%M:%S.%fZ')<=end_datetime]
     logger.info("From {} decision, {} were kept".format(len(decisions), len(filtered_decisions)))
     return filtered_decisions
+
+def _load_processed_decisions_ids(decisions_s3_file):
+    s3 = boto3.client("s3")
+    try:
+        obj = s3.get_object(Bucket=BUCKET_NAME, Key=decisions_s3_file)
+        data = obj["Body"].read().decode("utf-8")
+        return set(data.splitlines())
+    except s3.exceptions.NoSuchKey:
+        return set() 
+
+def _save_processed_decisions_ids(decisions_ids, decisions_s3_file):
+    s3 = boto3.client("s3")
+    data = "\n".join(decisions_ids)
+    s3.put_object(Bucket=BUCKET_NAME, Key=decisions_s3_file, Body=data.encode("utf-8")) 
+
+def filter_decisions(decisions, decisions_type):
+    decisions_s3_file = CASSATION_DECISIONS_S3_FILE if decisions_type=='cassation' else CE_DECISIONS_S3_FILE
+    processed_decisions_ids = _load_processed_decisions_ids(decisions_s3_file)
+    current_decisions_ids = set([decision['id'] for decision in decisions])
+    all_decisions_ids = current_decisions_ids.union(processed_decisions_ids)
+    _save_processed_decisions_ids(all_decisions_ids)
+    new_decisions_ids = current_decisions_ids - processed_decisions_ids
+    filtered_decisions = [decision for decision in decisions if decision['id'] in new_decisions_ids]
+    return filtered_decisions
+
