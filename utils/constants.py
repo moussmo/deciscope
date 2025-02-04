@@ -14,6 +14,6 @@ CE_PUBLICATION_DICT = {"A" : "Recueil Lebon",
                        "C" : "Non publiée et dont l'intérêt particulier"}
 CE_PUBLICATION_FILTERS = ['A', 'B']
 
-BUCKET_NAME = ""
+BUCKET_NAME = "deciscope"
 CASSATION_DECISIONS_S3_FILE = "cassation_processed_decisions_id.txt"
 CE_DECISIONS_S3_FILE = "ce_processed_decisions_id.txt"

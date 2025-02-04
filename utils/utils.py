@@ -116,7 +116,7 @@ def filter_decisions(decisions, decisions_type):
     processed_decisions_ids = _load_processed_decisions_ids(decisions_s3_file)
     current_decisions_ids = set([decision['id'] for decision in decisions])
     all_decisions_ids = current_decisions_ids.union(processed_decisions_ids)
-    _save_processed_decisions_ids(all_decisions_ids)
+    _save_processed_decisions_ids(all_decisions_ids, decisions_s3_file)
     new_decisions_ids = current_decisions_ids - processed_decisions_ids
     filtered_decisions = [decision for decision in decisions if decision['id'] in new_decisions_ids]
     return filtered_decisions
