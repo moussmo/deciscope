@@ -26,7 +26,7 @@ class Looker():
         logger.info("Loading processed decisions ids")
         s3 = boto3.client("s3")
         try:
-            obj = s3.get_object(Bucket=BUCKET_NAME, Key=self.s3_history_file_name)
+            obj = s3.get_object(Bucket=BUCKET_NAME, Key=self.old_s3_history_file_name)
             data = obj["Body"].read().decode("utf-8")
             return set(data.splitlines())
         except s3.exceptions.NoSuchKey:
@@ -57,7 +57,7 @@ class Looker():
         logger.info("Saving new processed decisions ids")
         s3 = boto3.client("s3")
         data = "\n".join(self.decisions_ids_to_save)
-        s3.put_object(Bucket=BUCKET_NAME, Key=self.s3_history_file_name, Body=data.encode("utf-8")) 
+        s3.put_object(Bucket=BUCKET_NAME, Key=self.new_s3_history_file_name, Body=data.encode("utf-8")) 
 
     @abstractmethod
     def _get_decisions(self):
