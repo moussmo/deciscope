@@ -2,7 +2,7 @@ import logging
 import requests
 import markdown
 from datetime import datetime, time, timedelta, date
-from utils.constants import DAYS_WINDOW, BUCKET_NAME, CASSATION_DECISIONS_S3_FILE, CE_DECISIONS_S3_FILE
+from utils.constants import DAYS_WINDOW
 import openai
 import json
 from openai import OpenAI

@@ -2,8 +2,6 @@ import logging
 import requests
 from datetime import datetime
 from bs4 import BeautifulSoup
-from utils.utils import get_datetime_limits, filter_decisions
-from utils.constants import CE_PUBLICATION_FILTERS, CE_PUBLICATION_DICT
 from looker.looker import Looker
 
 logger = logging.getLogger("CE LOOKER")

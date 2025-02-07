@@ -1,8 +1,7 @@
 import logging
 import requests
 from datetime import datetime
-from bs4 import BeautifulSoup
-from utils.utils import get_datetime_limits, filter_decisions, get_today, get_yesterday
+from utils.utils import get_today, get_yesterday
 from utils.constants import BUCKET_NAME
 import boto3
 from abc import ABC, abstractmethod

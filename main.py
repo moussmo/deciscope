@@ -3,10 +3,7 @@ import logging
 from email.message import EmailMessage
 import ssl
 from email.utils import formataddr
-from utils.constants import EMAIL_SENDER, EMAIL_RECEIVER, EMAIL_PASSWORD
 from utils.utils import get_today, get_secrets
-from looker.cassation_looker import look_cassation_decisions
-from looker.ce_looker import look_ce_decisions
 from writer.writer import Writer
 from looker.cassation_looker import CassationLooker
 from looker.ce_looker import CELooker

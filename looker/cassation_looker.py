@@ -1,7 +1,6 @@
 import logging
 import requests
-from utils.utils import get_piste_header, get_datetime_limits, filter_decisions
-from utils.constants import CASSATION_PUBLICATION_FILTERS, CASSATION_PUBLICATION_DICT
+from utils.utils import get_piste_header
 from looker.looker import Looker
 
 logger = logging.getLogger("CASSATION LOOKER")
