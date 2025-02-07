@@ -1,66 +1,66 @@
 import smtplib
-import logging_config
 import logging
 from email.message import EmailMessage
 import ssl
 from email.utils import formataddr
+from utils.constants import EMAIL_SENDER, EMAIL_RECEIVER, EMAIL_PASSWORD
 from utils.utils import get_today, get_secrets
 from looker.cassation_looker import look_cassation_decisions
 from looker.ce_looker import look_ce_decisions
-from writer.writer import write_mail_body
+from writer.writer import Writer
+from looker.cassation_looker import CassationLooker
+from looker.ce_looker import CELooker
 
-
-def get_cassation_mail():
-    cassation_decisions = look_cassation_decisions()
-    cassation_mail_body = write_mail_body(cassation_decisions, "la Cour de Cassation")
-
-    subject = 'Déciscope Cour de Cassation - {}'.format(get_today())
+def make_mail( subject, mail_body, email_sender, email_receiver):    
     email = EmailMessage()
-    email['From']= formataddr(('Déciscope', EMAIL_SENDER))
-    email['To'] = EMAIL_RECEIVER
+    email['From']= formataddr(('Déciscope', email_sender))
+    email['To'] = email_receiver
     email['Subject'] = subject
-    email.add_alternative(cassation_mail_body, subtype="html")
-    return email
- 
-def get_ce_mail():
-    ce_decisions = look_ce_decisions()
-    ce_mail_body = write_mail_body(ce_decisions, "le Conseil d'Etat")
-
-    subject = "Déciscope Conseil D'État - {}".format(get_today())
-    email = EmailMessage()
-    email['From']= formataddr(('Déciscope', EMAIL_SENDER))
-    email['To'] = EMAIL_RECEIVER
-    email['Subject'] = subject
-    email.add_alternative(ce_mail_body, subtype="html")
+    email.add_alternative(mail_body, subtype="html")
     return email
 
 if __name__=='__main__':
     logging.info("Main program started")
 
     secrets = get_secrets()
-    EMAIL_SENDER = secrets['EMAIL_SENDER']
-    EMAIL_PASSWORD = secrets['EMAIL_PASSWORD']
-    EMAIL_RECEIVER = secrets['EMAIL_RECEIVER']
-    
+    email_sender = secrets['EMAIL_SENDER']
+    email_password = secrets['EMAIL_PASSWORD']
+    email_receivers = secrets['EMAIL_RECEIVERS']
+    email_receivers = email_receivers.split(';')
+
+    logging.info("Main program started")
     logging.info("Launching lookers and writers")
+    writer = Writer()
 
-    cassation_mail = get_cassation_mail()
-    ce_mail = get_ce_mail()
-    context = ssl.create_default_context()
-    
+    cassation_looker = CassationLooker()
+    cassation_decisions = cassation_looker.look_for_decisions()
+    cassation_mailbody = writer.write_mail_body(cassation_decisions, "la cour de Cassation")
+    cassation_subject = 'Déciscope Cour de Cassation - {}'.format(get_today())
+    cassation_mails = []
+    for email_receiver in email_receivers:
+        cassation_mails = cassation_mails.append(make_mail(cassation_subject, cassation_mailbody, email_sender, email_receiver))
+
+    ce_looker = CELooker()
+    ce_decisions = ce_looker.look_for_decisions()
+    ce_mailbody = writer.write_mail_body(ce_decisions, "le Conseil D'État")
+    ce_subject = "Déciscope Conseil D'État - {}".format(get_today())
+    ce_mails = []
+    for email_receiver in email_receivers:
+        ce_mails = ce_mails.append(make_mail(ce_subject, ce_mailbody, email_sender, email_receiver))
+
     logging.info("Launching mail senders")
-
+    context = ssl.create_default_context()
     with smtplib.SMTP_SSL('smtp.gmail.com', 465, context=context) as smtp:
-        smtp.login(EMAIL_SENDER, EMAIL_PASSWORD)
+        smtp.login(email_sender, email_password)
         logging.info("Logged into email account successfully")
 
-        smtp.sendmail(EMAIL_SENDER, EMAIL_RECEIVER, cassation_mail.as_string())
-        logging.info("Sent Cassation mail")
+        for cassation_mail in cassation_mails:
+            smtp.sendmail(email_sender, email_password, cassation_mail.as_string())
+        logging.info("Sent Cassation mails successfully")
 
-        # Sending CE mail
-        smtp.sendmail(EMAIL_SENDER, EMAIL_RECEIVER, ce_mail.as_string())
+        for ce_mail in ce_mails:
+            smtp.sendmail(email_sender, email_password, ce_mail.as_string())
         logging.info("Sent CE mail")
-
-    logging.info("Main program over")
-
     
+    cassation_looker.save_history()
+    ce_looker.save_history()

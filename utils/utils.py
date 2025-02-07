@@ -44,10 +44,15 @@ def get_secrets():
     secret = json.loads(get_secret_value_response['SecretString'])
     return secret
 
+def get_yesterday():
+    today = date.today()
+    yesterday = date(day=today.day-1, month=today.month, year=today.year)
+    yesterday = yesterday.strftime("%d %B %Y")
+    return yesterday 
+
 def get_today():
     today = date.today()
     today = today.strftime("%d %B %Y")
-    logger.info("Today is : {}".format(today))
     return today 
 
 def get_datetime_limits():
@@ -90,38 +95,3 @@ def gpt_request(request_text, request_type, cour_type):
     except openai.error.OpenAIError as e:
         logging.info(f"An error occurred: {e}")
     return "GPT request for summarization or linkedin post generation failed for this decision." 
-    
-def filter_decisions_by_date(decisions, start_datetime, end_datetime):
-    logger.info("Filtering Decisions according to date and days window")
-    filtered_decisions = [decision for decision in decisions if start_datetime<=datetime.strptime(decision['decision_datetime'], '%Y-%m-%dT%H:%M:%S.%fZ')<=end_datetime]
-    logger.info("From {} decision, {} were kept".format(len(decisions), len(filtered_decisions)))
-    return filtered_decisions
-
-def _load_processed_decisions_ids(decisions_s3_file):
-    logger.info("Loading processed decisions ids")
-    s3 = boto3.client("s3")
-    try:
-        obj = s3.get_object(Bucket=BUCKET_NAME, Key=decisions_s3_file)
-        data = obj["Body"].read().decode("utf-8")
-        return set(data.splitlines())
-    except s3.exceptions.NoSuchKey:
-        return set() 
-
-def _save_processed_decisions_ids(decisions_ids, decisions_s3_file):
-    logger.info("Saving new processed decisions ids")
-    s3 = boto3.client("s3")
-    data = "\n".join(decisions_ids)
-    s3.put_object(Bucket=BUCKET_NAME, Key=decisions_s3_file, Body=data.encode("utf-8")) 
-
-def filter_decisions(decisions, decisions_type):
-    logger.info("Starting filtering process - only keeping decisions that have not been sent yet")
-    decisions_s3_file = CASSATION_DECISIONS_S3_FILE if decisions_type=='cassation' else CE_DECISIONS_S3_FILE
-    processed_decisions_ids = _load_processed_decisions_ids(decisions_s3_file)
-    current_decisions_ids = set([decision['id'] for decision in decisions])
-    all_decisions_ids = current_decisions_ids.union(processed_decisions_ids)
-    _save_processed_decisions_ids(all_decisions_ids, decisions_s3_file)
-    new_decisions_ids = current_decisions_ids - processed_decisions_ids
-    filtered_decisions = [decision for decision in decisions if decision['id'] in new_decisions_ids]
-    logger.info("From {} decision, {} were kept".format(len(decisions), len(filtered_decisions)))
-    return filtered_decisions
-
