@@ -17,10 +17,10 @@ class Looker():
         self.decisions_ids_to_save=[]
 
     def _get_old_s3_history_file_name(self):
-        return "{}_history_{}.txt".format(self.court_type, get_yesterday().replace(" ", "-"))
+        return "history/{}_history_{}.txt".format(self.court_type, get_yesterday().replace(" ", "-"))
     
     def _get_new_s3_history_file_name(self):
-        return "{}_history_{}.txt".format(self.court_type, get_today().replace(" ", "-"))
+        return "history/{}_history_{}.txt".format(self.court_type, get_today().replace(" ", "-"))
     
     def _load_history(self):
         logger.info("Loading processed decisions ids")
