@@ -16,7 +16,7 @@ class CELooker(Looker):
     def __init__(self):
         super().__init__("ce")
 
-    def _get_decision(url):
+    def _get_decision(self, url):
         decision = requests.get(url)
         if decision.status_code!=200:
             return ""
@@ -41,7 +41,7 @@ class CELooker(Looker):
         decisions = []
         for document in documents:
             decision_publication = document["SourceTree2"][-2:-1]
-            if decision_publication not in CE_PUBLICATION_FILTERS:
+            if decision_publication not in self.CE_PUBLICATION_FILTERS:
                 continue
             decision_id = document['SourceCsv1'].split(';')[0]
             decision_chamber = document["SourceStr7"]
@@ -54,7 +54,7 @@ class CELooker(Looker):
                         "decision_date" : decision_date,
                         "decision_datetime" : decision_datetime,
                         "decision_chamber" : decision_chamber,
-                        "decision_publication": CE_PUBLICATION_DICT[decision_publication],
+                        "decision_publication": self.CE_PUBLICATION_DICT[decision_publication],
                         "decision_link" : decision_link,
                         "text": decision_text
                         }
