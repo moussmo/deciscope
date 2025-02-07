@@ -6,7 +6,7 @@ from utils.constants import BUCKET_NAME
 import boto3
 from abc import ABC, abstractmethod
 
-logger = logging.getLogger("UTILS")
+logger = logging.getLogger("LOOKER")
 
 class Looker():
 

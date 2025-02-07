@@ -1,5 +1,6 @@
 import smtplib
 import logging
+import logging_config
 from email.message import EmailMessage
 import ssl
 from email.utils import formataddr

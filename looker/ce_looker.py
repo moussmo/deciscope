@@ -4,7 +4,7 @@ from datetime import datetime
 from bs4 import BeautifulSoup
 from looker.looker import Looker
 
-logger = logging.getLogger("CE LOOKER")
+logger = logging.getLogger("CE-LOOKER")
 
 class CELooker(Looker):
     CE_PUBLICATION_FILTERS = ['A', 'B']

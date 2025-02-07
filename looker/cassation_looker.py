@@ -3,7 +3,7 @@ import requests
 from utils.utils import get_piste_header
 from looker.looker import Looker
 
-logger = logging.getLogger("CASSATION LOOKER")
+logger = logging.getLogger("CASSATION-LOOKER")
 
 class CassationLooker(Looker):
     CASSATION_PUBLICATION_FILTERS = ['r', 'c', 'b']
