@@ -30,7 +30,7 @@ class Looker():
         if 'Contents' in response:
             file_data = [(obj, obj['LastModified']) for obj in response['Contents']]
             file_data.sort(key=lambda x: x[1]) 
-            data_key = file_data[0][0]['key']
+            data_key = file_data[0][0]['Key']
             obj = s3.get_object(Bucket=BUCKET_NAME, Key=data_key)
             data = obj["Body"].read().decode("utf-8")
             return set(data.splitlines())
