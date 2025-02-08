@@ -68,6 +68,6 @@ class CELooker(Looker):
         header = {"content-type":"application/json"}
 
         decisions = self._get_decisions(url, header)
-        filtered_decisions = self._filter_decisions(decisions, 'ce')
+        filtered_decisions = self._filter_decisions(decisions)
 
         return filtered_decisions

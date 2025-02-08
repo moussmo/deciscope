@@ -13,9 +13,9 @@ class Looker():
 
     def __init__(self, court_type):
         self.court_type = court_type
+        self.decisions_ids_to_save=[]
         self.old_s3_history_file_name = self._get_old_s3_history_file_name()   
         self.new_s3_history_file_name = self._get_new_s3_history_file_name()   
-        self.decisions_ids_to_save=[]
 
     def _get_old_s3_history_file_name(self):
         return "history/{}_history_{}.txt".format(self.court_type, get_yesterday().replace(" ", "-"))
@@ -30,12 +30,13 @@ class Looker():
         if 'Contents' in response:
             file_data = [(obj, obj['LastModified']) for obj in response['Contents']]
             file_data.sort(key=lambda x: x[1]) 
-            data = file_data[0][0]['body'].read().decode("utf-8")
+            data_key = file_data[0][0]['key']
+            obj = s3.get_object(Bucket=BUCKET_NAME, Key=data_key)
+            data = obj["Body"].read().decode("utf-8")
             return set(data.splitlines())
         else:
             print("No objects found in the specified directory.")
             return set()
-
         
     def _filter_decisions(self, decisions):
         logger.info("Starting filtering process - only keeping decisions that have not been sent yet")
