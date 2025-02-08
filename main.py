@@ -36,15 +36,15 @@ if __name__=='__main__':
     cassation_subject = 'Déciscope Cour de Cassation - {}'.format(get_today())
     cassation_mails = []
     for email_receiver in email_receivers:
-        cassation_mails = cassation_mails.append(make_mail(cassation_subject, cassation_mailbody, email_sender, email_receiver))
-
+        cassation_mails.append(make_mail(cassation_subject, cassation_mailbody, email_sender, email_receiver))
+    
     ce_looker = CELooker()
     ce_decisions = ce_looker.look_for_decisions()
     ce_mailbody = writer.write_mail_body(ce_decisions, "le Conseil D'État")
     ce_subject = "Déciscope Conseil D'État - {}".format(get_today())
     ce_mails = []
     for email_receiver in email_receivers:
-        ce_mails = ce_mails.append(make_mail(ce_subject, ce_mailbody, email_sender, email_receiver))
+        ce_mails.append(make_mail(ce_subject, ce_mailbody, email_sender, email_receiver))
 
     logging.info("Launching mail senders")
     context = ssl.create_default_context()

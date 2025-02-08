@@ -4,6 +4,7 @@ from datetime import datetime
 from utils.utils import get_today, get_yesterday
 from utils.constants import BUCKET_NAME
 import boto3
+import os
 from abc import ABC, abstractmethod
 
 logger = logging.getLogger("LOOKER")
@@ -25,12 +26,16 @@ class Looker():
     def _load_history(self):
         logger.info("Loading processed decisions ids")
         s3 = boto3.client("s3")
-        try:
-            obj = s3.get_object(Bucket=BUCKET_NAME, Key=self.old_s3_history_file_name)
-            data = obj["Body"].read().decode("utf-8")
+        response = s3.list_objects_v2(Bucket=BUCKET_NAME, Prefix="history")
+        if 'Contents' in response:
+            file_data = [(obj, obj['LastModified']) for obj in response['Contents']]
+            file_data.sort(key=lambda x: x[1]) 
+            data = file_data[0][0]['body'].read().decode("utf-8")
             return set(data.splitlines())
-        except s3.exceptions.NoSuchKey:
-            return set() 
+        else:
+            print("No objects found in the specified directory.")
+            return set()
+
         
     def _filter_decisions(self, decisions):
         logger.info("Starting filtering process - only keeping decisions that have not been sent yet")
