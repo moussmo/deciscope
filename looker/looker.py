@@ -1,10 +1,8 @@
 import logging
-import requests
 from datetime import datetime
-from utils.utils import get_today, get_yesterday
+from utils.utils import get_today
 from utils.constants import BUCKET_NAME
 import boto3
-import os
 from abc import ABC, abstractmethod
 
 logger = logging.getLogger("LOOKER")
