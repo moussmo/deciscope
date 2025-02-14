@@ -44,12 +44,6 @@ def get_secrets():
     secret = json.loads(get_secret_value_response['SecretString'])
     return secret
 
-def get_yesterday():
-    today = date.today()
-    yesterday = date(day=today.day-1, month=today.month, year=today.year)
-    yesterday = yesterday.strftime("%d %B %Y")
-    return yesterday 
-
 def get_today():
     today = date.today()
     today = today.strftime("%d %B %Y")
