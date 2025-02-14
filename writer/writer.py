@@ -72,3 +72,6 @@ class Writer():
             </body>
         </html>"""
         return html_body
+    
+    def get_default_mailbody(self, court_type):
+        return "Désolé, une erreur inattendue est survenue lors du lancement du module de "" de Déciscope.".format(court_type)

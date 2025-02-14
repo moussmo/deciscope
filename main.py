@@ -28,19 +28,32 @@ if __name__=='__main__':
 
     logging.info("Main program started")
     logging.info("Launching lookers and writers")
+
     writer = Writer()
+    cassation_default = False
+    ce_default = False
 
     cassation_looker = CassationLooker()
-    cassation_decisions = cassation_looker.look_for_decisions()
-    cassation_mailbody = writer.write_mail_body(cassation_decisions, "la cour de Cassation")
+    try:
+        cassation_decisions = cassation_looker.look_for_decisions()
+        cassation_mailbody = writer.write_mail_body(cassation_decisions, "la cour de Cassation")
+    except Exception as e:
+        cassation_default = True
+        cassation_mailbody = writer.get_default_mailbody("la cour de Cassation")
+        logging.info("Cassation module error : {}".format(e))
     cassation_subject = 'Déciscope Cour de Cassation - {}'.format(get_today())
     cassation_mails = []
     for email_receiver in email_receivers:
         cassation_mails.append((email_receiver, make_mail(cassation_subject, cassation_mailbody, email_sender, email_receiver)))
     
     ce_looker = CELooker()
-    ce_decisions = ce_looker.look_for_decisions()
-    ce_mailbody = writer.write_mail_body(ce_decisions, "le Conseil D'État")
+    try:
+        ce_decisions = ce_looker.look_for_decisions()
+        ce_mailbody = writer.write_mail_body(ce_decisions, "le Conseil D'État")
+    except Exception as e:
+        ce_default = True
+        ce_mailbody = writer.get_default_mailbody("le Conseil D'État")
+        logging.info("CE module error : {}".format(e))
     ce_subject = "Déciscope Conseil D'État - {}".format(get_today())
     ce_mails = []
     for email_receiver in email_receivers:
@@ -60,5 +73,9 @@ if __name__=='__main__':
             smtp.sendmail(email_sender, email_receiver, ce_mail.as_string())
         logging.info("Sent CE mail")
     
-    cassation_looker.save_history()
-    ce_looker.save_history()
+    if not cassation_default:
+        cassation_looker.save_history()
+    if not ce_default:
+            ce_looker.save_history()
+
+    
