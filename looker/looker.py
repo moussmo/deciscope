@@ -13,23 +13,19 @@ class Looker():
     def __init__(self, court_type):
         self.court_type = court_type
         self.decisions_ids_to_save=[]
-        self.old_s3_history_file_name = self._get_old_s3_history_file_name()   
         self.new_s3_history_file_name = self._get_new_s3_history_file_name()   
 
-    def _get_old_s3_history_file_name(self):
-        return "history/{}_history_{}.txt".format(self.court_type, get_yesterday().replace(" ", ""))
-    
     def _get_new_s3_history_file_name(self):
-        return "history/{}_history_{}.txt".format(self.court_type, get_today().replace(" ", ""))
+        return "history/{}/{}_history_{}.txt".format(self.court_type, self.court_type, get_today().replace(" ", ""))
     
     def _load_history(self):
         logger.info("Loading processed decisions ids")
         s3 = boto3.client("s3")
-        response = s3.list_objects_v2(Bucket=BUCKET_NAME, Prefix="history")
+        response = s3.list_objects_v2(Bucket=BUCKET_NAME, Prefix="history/{}".format(self.court_type))
         if 'Contents' in response:
-            file_data = [(obj, obj['LastModified']) for obj in response['Contents'] if obj['Key'] != "history/" and obj['Key'].startswith("history/{}".format(self.court_type))]
+            file_data = [(obj, obj['LastModified']) for obj in response['Contents'] if obj['Key'] != "history/{}/".format(self.court_type)]
             file_data.sort(key=lambda x: x[1]) 
-            data_key = file_data[0][0]['Key']
+            data_key = file_data[-1][0]['Key']
             obj = s3.get_object(Bucket=BUCKET_NAME, Key=data_key)
             data = obj["Body"].read().decode("utf-8")
             return set(data.splitlines())
