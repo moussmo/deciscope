@@ -65,13 +65,13 @@ if __name__=='__main__':
         smtp.login(email_sender, email_password)
         logging.info("Logged into email account successfully")
 
-        for email_receiver, cassation_mail in cassation_mails:
-            smtp.sendmail(email_sender, email_receiver, cassation_mail.as_string())
-        logging.info("Sent Cassation mails successfully")
+        # for email_receiver, cassation_mail in cassation_mails:
+        #     smtp.sendmail(email_sender, email_receiver, cassation_mail.as_string())
+        # logging.info("Sent Cassation mails successfully")
 
-        for email_receiver, ce_mail in ce_mails:
-            smtp.sendmail(email_sender, email_receiver, ce_mail.as_string())
-        logging.info("Sent CE mail")
+        # for email_receiver, ce_mail in ce_mails:
+        #     smtp.sendmail(email_sender, email_receiver, ce_mail.as_string())
+        # logging.info("Sent CE mail")
     
     if not cassation_default:
         cassation_looker.save_history()
