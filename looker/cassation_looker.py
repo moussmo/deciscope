@@ -37,7 +37,7 @@ class CassationLooker(Looker):
         url = endpoint + 'export'
         decisions_request = requests.get(url, params={'batch': 0, 'batch_size' : 100, 'publication': self.CASSATION_PUBLICATION_FILTERS}, headers= header)
         if decisions_request.status_code!=200:
-            logger.info("GET Request to get Cassation decisions failed")
+            logger.info("GET Request to get Cassation decisions failed, error code : {}".format(decisions_request.status_code))
             raise Exception('GET Export request failed')
         logger.info("{}".format(decisions_request))
         return decisions_request.json()['results']
