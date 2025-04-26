@@ -57,7 +57,7 @@ class Looker():
         s3 = boto3.client("s3")
         data = "\n".join(self.decisions_ids_to_save)
         s3.put_object(Bucket=BUCKET_NAME, Key=self.new_s3_history_file_name, Body=data.encode("utf-8")) 
-
+        
     @abstractmethod
     def _get_decisions(self):
         pass
