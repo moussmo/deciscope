@@ -39,6 +39,7 @@ class CassationLooker(Looker):
         if decisions_request.status_code!=200:
             logger.info("GET Request to get Cassation decisions failed")
             raise Exception('GET Export request failed')
+        logger.info("{}".format(decisions_request))
         return decisions_request.json()['results']
 
     def _sort_decisions(self, decisions):
