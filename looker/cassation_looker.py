@@ -12,8 +12,10 @@ class CassationLooker(Looker):
                                   'l' : 'Lettres de chambre',
                                   'c' : 'Communiqué'}
 
-    def __init__(self):
+    def __init__(self, client_id, client_secret):
         super().__init__("cassation")
+        self.client_id = client_id
+        self.client_secret = client_secret
 
     def _reduce_decisions(self, decisions):
         logger.info("Reducing Cassation Decisions")
@@ -47,8 +49,8 @@ class CassationLooker(Looker):
     def look_for_decisions(self):
         logger.info("Cassation looker launched")
 
-        url = 'https://sandbox-api.piste.gouv.fr/cassation/judilibre/v1.0/'
-        header = get_piste_header()
+        url = 'https://api.piste.gouv.fr/cassation/judilibre/v1.0/'
+        header = get_piste_header(self.client_id, self.client_secret)
 
         decisions = self._get_decisions(url, header)
         filtered_decisions = self._filter_decisions(decisions)
