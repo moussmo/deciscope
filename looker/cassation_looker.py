@@ -12,8 +12,10 @@ class CassationLooker(Looker):
                                   'l' : 'Lettres de chambre',
                                   'c' : 'Communiqué'}
 
-    def __init__(self):
+    def __init__(self, client_id, client_secret):
         super().__init__("cassation")
+        self.client_id = client_id
+        self.client_secret = client_secret
 
     def _reduce_decisions(self, decisions):
         logger.info("Reducing Cassation Decisions")
@@ -35,9 +37,9 @@ class CassationLooker(Looker):
     def _get_decisions(self, endpoint, header):
         logger.info("Getting Cassation decisions")
         url = endpoint + 'export'
-        decisions_request = requests.get(url, params={'batch': 0, 'batch_size' : 100, 'publication': self.CASSATION_PUBLICATION_FILTERS}, headers= header)
+        decisions_request = requests.get(url, params={'batch': 0, 'batch_size' : 100, 'order':'desc','publication': self.CASSATION_PUBLICATION_FILTERS}, headers= header)
         if decisions_request.status_code!=200:
-            logger.info("GET Request to get Cassation decisions failed")
+            logger.info("GET Request to get Cassation decisions failed, error code : {}".format(decisions_request.status_code))
             raise Exception('GET Export request failed')
         return decisions_request.json()['results']
 
@@ -47,8 +49,8 @@ class CassationLooker(Looker):
     def look_for_decisions(self):
         logger.info("Cassation looker launched")
 
-        url = 'https://sandbox-api.piste.gouv.fr/cassation/judilibre/v1.0/'
-        header = get_piste_header()
+        url = 'https://api.piste.gouv.fr/cassation/judilibre/v1.0/'
+        header = get_piste_header(self.client_id, self.client_secret)
 
         decisions = self._get_decisions(url, header)
         filtered_decisions = self._filter_decisions(decisions)

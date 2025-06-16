@@ -25,6 +25,8 @@ if __name__=='__main__':
     email_password = secrets['EMAIL_PASSWORD']
     email_receivers = secrets['EMAIL_RECEIVERS']
     email_receivers = email_receivers.split(';')
+    client_id = secrets['CLIENT_ID']
+    client_secret = secrets['CLIENT_SECRET']
 
     logging.info("Main program started")
     logging.info("Launching lookers and writers")
@@ -33,7 +35,7 @@ if __name__=='__main__':
     cassation_default = False
     ce_default = False
 
-    cassation_looker = CassationLooker()
+    cassation_looker = CassationLooker(client_id, client_secret)
     try:
         cassation_decisions = cassation_looker.look_for_decisions()
         cassation_mailbody = writer.write_mail_body(cassation_decisions, "la cour de Cassation")
@@ -44,7 +46,7 @@ if __name__=='__main__':
     cassation_subject = 'Déciscope Cour de Cassation - {}'.format(get_today())
     cassation_mails = []
     for email_receiver in email_receivers:
-        cassation_mails.append((email_receiver, make_mail(cassation_subject, cassation_mailbody, email_sender, email_receiver)))
+        cassation_mails.append((email_receiver.strip(), make_mail(cassation_subject, cassation_mailbody, email_sender, email_receiver)))
     
     ce_looker = CELooker()
     try:

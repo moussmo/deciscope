@@ -12,11 +12,10 @@ import boto3
 locale.setlocale(locale.LC_TIME, 'fr_FR.UTF-8')
 logger = logging.getLogger("UTILS")
 
-def get_piste_header():
+def get_piste_header(client_id, client_secret):
     logger.info("Getting PISTE API token")
-    url = 'https://sandbox-oauth.piste.gouv.fr/api/oauth/token'
-    post_request = requests.post(url, data={"grant_type":"client_credentials", "client_id":"69021959-e7d7-4faf-bc79-04bc3fed3bc3", 
-                                            "client_secret":"3c7b3ad7-169c-43d9-b9ea-a4f03394c61d", "scope":"openid"},
+    url = 'https://oauth.piste.gouv.fr/api/oauth/token'
+    post_request = requests.post(url, data={"grant_type":"client_credentials", "client_id": client_id, "client_secret": client_secret, "scope":"openid"},
                                  headers={'Content-Type': 'application/x-www-form-urlencoded'})
     if post_request.status_code!=200:
         raise Exception('Token was not retrieved, post request failed')
@@ -76,16 +75,6 @@ def gpt_request(request_text, request_type, cour_type):
             messages=[{"role": "user", "content": message}]
             )
         return markdown.markdown(completion.choices[0].message.content.replace("#", "\#"))
-    except openai.error.InvalidRequestError as e:
-        logging.info(f"Invalid request error: {e}")
-    except openai.error.AuthenticationError as e:
-        logging.info(f"Authentication error: {e}")
-    except openai.error.RateLimitError as e:
-        logging.info(f"Rate limit exceeded: {e}")
-    except openai.error.Timeout as e:
-        logging.info(f"Request timed out: {e}")
-    except openai.error.APIError as e:
-        logging.info(f"API error: {e}")
-    except openai.error.OpenAIError as e:
-        logging.info(f"An error occurred: {e}")
-    return "GPT request for summarization or linkedin post generation failed for this decision." 
+    except Exception as e:
+        logging.info(f"An error occurred when calling ChatGPT : {e}")
+        return "GPT request for summarization or linkedin post generation failed for this decision." 
